@@ -39,7 +39,7 @@ const Profile = () => {
               </a>
               <a
                 href="http://wa.me/+6281934760910"
-                className="border border-black px-4 py-2 rounded-md hover:bg-green-900 hover:text-white dark:border-white"
+                className="border border-black px-4 py-2 rounded-md hover:bg-green-900 hover:text-white dark:border-white" target="_blank" rel="noreferrer"
               >
                 Contact Me
               </a>

@@ -1,7 +1,27 @@
-import splashScreen1 from "../../../assets/UIUX-KiddyLearn Adventures/Splash Screen - 1.png"
+import splashScreen1 from "../../../assets/UIUX-KiddyLearn Adventures/Splash Screen - 1.png";
 import splashScreen2 from "../../../assets/UIUX-KiddyLearn Adventures/Splash Screen - 2.png";
 import splashScreen3 from "../../../assets/UIUX-KiddyLearn Adventures/Splash Screen - 3.png";
 import splashScreen4 from "../../../assets/UIUX-KiddyLearn Adventures/Splash Screen - 4.png";
+import login from "../../../assets/UIUX-KiddyLearn Adventures/Login.png";
+import registrasi1 from "../../../assets/UIUX-KiddyLearn Adventures/Pilih Birthday.png";
+import registrasi2 from "../../../assets/UIUX-KiddyLearn Adventures/Pilih Bahasa.png";
+import registrasi3 from "../../../assets/UIUX-KiddyLearn Adventures/Pilih Avatar.png";
+import beranda from "../../../assets/UIUX-KiddyLearn Adventures/Halaman Utama.png";
+import leaderboard from "../../../assets/UIUX-KiddyLearn Adventures/LeaderBoard.png";
+import papanPerkembangan from "../../../assets/UIUX-KiddyLearn Adventures/Papan Perkembangan.png";
+import shop from "../../../assets/UIUX-KiddyLearn Adventures/Shop.png";
+import tebakGambar1 from "../../../assets/UIUX-KiddyLearn Adventures/Tebak Gambar-2.png";
+import tebakGambar2 from "../../../assets/UIUX-KiddyLearn Adventures/Tebak Gambar-1.png";
+import tebakGambar3 from "../../../assets/UIUX-KiddyLearn Adventures/Tebak Gambar.png";
+import puzzle from "../../../assets/UIUX-KiddyLearn Adventures/Puzzle.png";
+import memoriMatching from "../../../assets/UIUX-KiddyLearn Adventures/Memory Matching.png";
+import labirinPendidikan from "../../../assets/UIUX-KiddyLearn Adventures/Labirin Pendidikan.png";
+import tebakKata from "../../../assets/UIUX-KiddyLearn Adventures/Tebak Kata.png";
+import mencariPerbedaan from "../../../assets/UIUX-KiddyLearn Adventures/Mencari Perbedaan.png";
+import cerdasCermat from "../../../assets/UIUX-KiddyLearn Adventures/Interaktif Ceria.png";
+import matematika from "../../../assets/UIUX-KiddyLearn Adventures/Hitung.png";
+import setting1 from "../../../assets/UIUX-KiddyLearn Adventures/Settings.png";
+import setting2 from "../../../assets/UIUX-KiddyLearn Adventures/Settings-1.png";
 import DesignThinking from "./DesignThinking";
 
 const KiddyLearn = () => {
@@ -39,22 +59,135 @@ const KiddyLearn = () => {
             </div>
           </div>
           <DesignThinking />
-          <div className="flex flex-col justify-center items-center mx-10 my-12">
-            <div>
-              <img src={splashScreen1} alt="" />
-              <p className="text-center mb-5 text-sm mt-2">Splash Screen - 1</p>
+
+          {/* Splash Screen */}
+          <div className="mt-10">
+            <h1 className="text-left font-semibold">Halaman Splash Screen</h1>
+            <div className="grid mx-1 my-2 gap-2 grid-cols-2">
+              <div>
+                <img src={splashScreen1} alt="" />
+                <p className="text-center text-sm mt-1">Splash Screen - 1</p>
+              </div>
+              <div>
+                <img src={splashScreen2} alt="" />
+                <p className="text-center text-sm mt-1">Splash Screen - 2</p>
+              </div>
+              <div>
+                <img src={splashScreen3} alt="" />
+                <p className="text-center text-sm mt-1">Splash Screen - 3</p>
+              </div>
+              <div>
+                <img src={splashScreen4} alt="" />
+                <p className="text-center text-sm mt-1">Splash Screen - 4</p>
+              </div>
             </div>
-            <div>
-              <img src={splashScreen2} alt="" />
-              <p className="text-center mb-6 text-sm mt-2">Splash Screen - 2</p>
+          </div>
+
+          {/* Registrasi */}
+          <div>
+            <h1 className="text-left font-semibold">Halaman Registrasi</h1>
+            <div className="grid mx-1 my-4 gap-2 grid-cols-2">
+              <div>
+                <img src={login} alt="" />
+                <p className="text-center text-sm mt-1">Login</p>
+              </div>
+              <div>
+                <img src={registrasi1} alt="" />
+                <p className="text-center text-sm mt-1">Pilih Birthday</p>
+              </div>
+              <div>
+                <img src={registrasi2} alt="" />
+                <p className="text-center text-sm mt-1">Pilih Bahasa</p>
+              </div>
+              <div>
+                <img src={registrasi3} alt="" />
+                <p className="text-center text-sm mt-1">Pilih Avatar</p>
+              </div>
             </div>
-            <div>
-              <img src={splashScreen3} alt="" />
-              <p className="text-center mb-6 text-sm mt-2">Splash Screen - 3</p>
+          </div>
+
+          {/* Beranda */}
+          <div>
+            <h1 className="text-left font-semibold">Halaman Utama</h1>
+            <div className="grid mx-1 my-4 gap-2 grid-cols-2">
+              <div>
+                <img src={beranda} alt="" />
+                <p className="text-center text-sm mt-1">Halaman Utama</p>
+              </div>
+              <div>
+                <img src={leaderboard} alt="" />
+                <p className="text-center text-sm mt-1">Leaderboard</p>
+              </div>
+              <div>
+                <img src={papanPerkembangan} alt="" />
+                <p className="text-center text-sm mt-1">Papan Perkembangan</p>
+              </div>
+              <div>
+                <img src={shop} alt="" />
+                <p className="text-center text-sm mt-1">Toko</p>
+              </div>
             </div>
-            <div>
-              <img src={splashScreen4} alt="" />
-              <p className="text-center mb-6 text-sm mt-2">Splash Screen - 4</p>
+          </div>
+
+          {/* Permainan */}
+          <div>
+            <h1 className="text-left font-semibold">Permainan</h1>
+            <div className="grid mx-1 my-4 gap-2 grid-cols-2">
+              <div>
+                <img src={tebakGambar1} alt="" />
+                <p className="text-center text-sm mt-1">Tebak Gambar - 1</p>
+              </div>
+              <div>
+                <img src={tebakGambar2} alt="" />
+                <p className="text-center text-sm mt-1">Tebak Gambar - 2</p>
+              </div>
+              <div>
+                <img src={tebakGambar3} alt="" />
+                <p className="text-center text-sm mt-1">Tebak Gambar - 3</p>
+              </div>
+              <div>
+                <img src={puzzle} alt="" />
+                <p className="text-center text-sm mt-1">Puzzle</p>
+              </div>
+              <div>
+                <img src={memoriMatching} alt="" />
+                <p className="text-center text-sm mt-1">Memori Matching</p>
+              </div>
+              <div>
+                <img src={labirinPendidikan} alt="" />
+                <p className="text-center text-sm mt-1">Labirin Pendidikan</p>
+              </div>
+              <div>
+                <img src={tebakKata} alt="" />
+                <p className="text-center text-sm mt-1">Tebak Kata</p>
+              </div>
+              <div>
+                <img src={mencariPerbedaan} alt="" />
+                <p className="text-center text-sm mt-1">Mencari Perbedaan</p>
+              </div>
+              <div>
+                <img src={cerdasCermat} alt="" />
+                <p className="text-center text-sm mt-1">Cerdas Cermat</p>
+              </div>
+              <div>
+                <img src={matematika} alt="" />
+                <p className="text-center text-sm mt-1">Hitung</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Settings */}
+          <div>
+            <h1 className="text-left font-semibold">Pengaturan</h1>
+            <div className="grid mx-1 my-4 gap-2 grid-cols-2">
+              <div>
+                <img src={setting1} alt="" />
+                <p className="text-center text-sm mt-1">Pengaturan</p>
+              </div>
+              <div>
+                <img src={setting2} alt="" />
+                <p className="text-center text-sm mt-1">Pengaturan</p>
+              </div>
             </div>
           </div>
         </div>

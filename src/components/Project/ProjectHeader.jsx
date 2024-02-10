@@ -17,7 +17,7 @@ const ProjectHeader = () => {
                   <img
                     src={kiddyLearn}
                     alt={kiddyLearn}
-                    className="w-full h-80 object-cover"
+                    className="w-full h-80 object-cover rounded-t-lg"
                   />
                   <div className="flex flex-col py-3 px-3 mx-3 gap-4">
                     <h1 className="font-semibold">KiddyLearn Adventures</h1>
