@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./components/pages/ErrorPage.jsx";
 import About from "./components/About/About.jsx";
 import KiddyLearn from "./components/Project/kiddyLearn/KiddyLearn.jsx";
+import Qris from "./components/Project/Qris/Qris.jsx";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/project-experience/kiddy-learn-adventures",
     element: <KiddyLearn />,
+  },
+  {
+    path: "/project-experience/qris",
+    element: <Qris />,
   },
 ]);
 

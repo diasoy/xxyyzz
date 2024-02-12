@@ -69,7 +69,7 @@ const Navbar = ({ setTheme }) => {
               Contact
             </a>
             <button
-              className="bg-green-600 rounded-md hover:bg-green-800 px-3 py-1"
+              className="bg-green-700 rounded-md hover:bg-green-800 px-3 py-1"
               onClick={setTheme}
             >
               Change Theme
@@ -106,7 +106,7 @@ const Navbar = ({ setTheme }) => {
             </a>
           </div>
           <button
-            className="bg-green-600 rounded-md hover:bg-green-800 px-3 py-1"
+            className="bg-green-700 rounded-md hover:bg-green-800 px-3 py-1"
             onClick={setTheme}
           >
             Change Theme

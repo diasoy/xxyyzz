@@ -4,10 +4,16 @@ const DesignThinking = () => {
   return (
     <>
       <div>
-        <div className="flex flex-col gap-2">
-          <h1 className="font-semibold text-lg">Design Thinking Process</h1>
-          <img src={designThinkingImage} alt="designThinkingImage" />
-          <p className="text-sm text-justify">
+        <h1 className="font-semibold text-lg 2xl:text-xl">
+          Design Thinking Process
+        </h1>
+        <div className="flex flex-col gap-2 items-center">
+          <img
+            src={designThinkingImage}
+            alt="designThinkingImage"
+            className=""
+          />
+          <p className="text-sm text-justify 2xl:text-base">
             Metodologi pengembangan yang digunakan untuk mengembangkan aplikasi
             adalah Iterative Design Thinking Process yang diadaptasi dari
             Lewrick, Link, dan Leifer (2018). Beberapa proses pada metodologi

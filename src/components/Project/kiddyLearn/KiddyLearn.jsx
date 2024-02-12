@@ -25,23 +25,15 @@ import setting2 from "../../../assets/UIUX-KiddyLearn Adventures/Settings-1.png"
 import DesignThinking from "./DesignThinking";
 
 const KiddyLearn = () => {
-  const kembali = () => {
-    window.history.back();
-  };
-
   return (
     <>
       <div className="font-[Montserrat] dark:bg-zinc-800 dark:text-white">
-        <button
-          onClick={kembali}
-          className="fixed bg-green-600 text-white px-5 py-2 rounded-br-xl"
-        >
-          Kembali
-        </button>
-        <div className="flex flex-col pt-12 mx-6 gap-4">
+        <div className="flex flex-col pt-12 mx-10 gap-4 md:mx-32 lg:mx-64 2xl:mx-96">
           <div className="flex flex-col gap-4 mb-8">
-            <h1 className="font-bold text-xl">KiddyLearn Adventures</h1>
-            <p className="text-justify text-sm">
+            <h1 className="font-bold text-xl 2xl:text-2xl">
+              KiddyLearn Adventures
+            </h1>
+            <p className="text-justify text-sm 2xl:text-base">
               “KiddyLearn Adventures” adalah sebuah aplikasi pembelajaran yang
               dihadirkan dengan konsep user interface yang menarik dan
               interaktif, dirancang khusus untuk anak-anak. “KiddyLearn
@@ -62,11 +54,13 @@ const KiddyLearn = () => {
 
           {/* Splash Screen */}
           <div className="mt-10">
-            <h1 className="text-left font-semibold">Halaman Splash Screen</h1>
+            <h1 className="text-left font-semibold 2xl:text-lg">
+              Halaman Splash Screen
+            </h1>
             <div className="grid mx-1 my-2 gap-2 grid-cols-2">
               <div>
                 <img src={splashScreen1} alt="" />
-                <p className="text-center text-sm mt-1">Splash Screen - 1</p>
+                <p className="text-center text-sm mt-1 ">Splash Screen - 1</p>
               </div>
               <div>
                 <img src={splashScreen2} alt="" />
@@ -85,7 +79,9 @@ const KiddyLearn = () => {
 
           {/* Registrasi */}
           <div>
-            <h1 className="text-left font-semibold">Halaman Registrasi</h1>
+            <h1 className="text-left font-semibold 2xl:text-lg">
+              Halaman Registrasi
+            </h1>
             <div className="grid mx-1 my-4 gap-2 grid-cols-2">
               <div>
                 <img src={login} alt="" />
@@ -108,7 +104,9 @@ const KiddyLearn = () => {
 
           {/* Beranda */}
           <div>
-            <h1 className="text-left font-semibold">Halaman Utama</h1>
+            <h1 className="text-left font-semibold 2xl:text-lg">
+              Halaman Utama
+            </h1>
             <div className="grid mx-1 my-4 gap-2 grid-cols-2">
               <div>
                 <img src={beranda} alt="" />
@@ -131,7 +129,7 @@ const KiddyLearn = () => {
 
           {/* Permainan */}
           <div>
-            <h1 className="text-left font-semibold">Permainan</h1>
+            <h1 className="text-left font-semibold 2xl:text-lg">Permainan</h1>
             <div className="grid mx-1 my-4 gap-2 grid-cols-2">
               <div>
                 <img src={tebakGambar1} alt="" />
