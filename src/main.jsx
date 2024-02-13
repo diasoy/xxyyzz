@@ -7,6 +7,7 @@ import ErrorPage from "./components/pages/ErrorPage.jsx";
 import About from "./components/About/About.jsx";
 import KiddyLearn from "./components/Project/kiddyLearn/KiddyLearn.jsx";
 import Qris from "./components/Project/Qris/Qris.jsx";
+import ArticleHeader from "./components/Article/ArticleHeader.jsx";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />,
+  },
+  {
+    path: "/article",
+    element: <ArticleHeader />,
   },
   {
     path: "/project-experience/kiddy-learn-adventures",
