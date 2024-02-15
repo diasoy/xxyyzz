@@ -25,8 +25,8 @@ const ProjectHeader = () => {
                     className="w-full h-64 object-cover rounded-t-lg"
                   />
                   <div className="flex flex-col justify-center items-center py-6 px-3 mx-3 gap-4">
-                    <h1 className="font-semibold 2xl:text-lg">
-                      KiddyLearn Adventures
+                    <h1 className="font-semibold 2xl:text-lg text-center">
+                      KiddyLearn
                     </h1>
                     <p className="text-center">
                       Aplikasi Permainan dan Belajar Anak Menyenangkan
@@ -48,7 +48,9 @@ const ProjectHeader = () => {
                     className="w-full h-64 object-cover rounded-t-lg"
                   />
                   <div className="flex flex-col justify-center items-center py-6 px-3 mx-3 gap-4">
-                    <h1 className="font-semibold 2xl:text-lg">Qris</h1>
+                    <h1 className="font-semibold 2xl:text-lg text-center">
+                      Qris
+                    </h1>
                     <p className="text-center">
                       Aplikasi Pembayaran dan Penyimpanan Uang Digital
                     </p>

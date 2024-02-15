@@ -8,7 +8,7 @@ import { InstagramLogo, LinkedinLogo, GithubLogo } from "@phosphor-icons/react";
 const Profile = () => {
   return (
     <>
-      <div className=" mx-8 py-24 lg:py-48 lg:mx-20 xl:mx-12 2xl:mx-32 mt-10 items-center justify-center dark:bg-zinc-800 dark:text-white">
+      <div className=" mx-8 py-24 lg:py-20 lg:mx-20 xl:mx-12 2xl:mx-32 mt-10 items-center justify-center dark:bg-zinc-800 dark:text-white">
         <div className="flex flex-col-reverse lg:grid grid-cols-2 justify-center items-center">
           <div className="xl:mx-24 lg:items-start lg:px-4 lg:gap-4">
             <div className="flex items-center flex-col gap-2 mt-8 lg:items-start lg:gap-6">

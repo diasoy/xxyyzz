@@ -1,35 +1,13 @@
 /* eslint-disable react/prop-types */
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const Navbar = ({ setTheme }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [scroll, setScroll] = useState(false);
-
-  const changeBackground = () => {
-    if (window.scrollY >= 80) {
-      setScroll(true);
-    } else {
-      setScroll(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", changeBackground);
-    return () => {
-      window.removeEventListener("scroll", changeBackground);
-    };
-  }, []);
 
   return (
     <>
-      <div className="fixed w-full top-0">
-        <div
-          className={` ${
-            scroll
-              ? "bg-zinc-700 rounded-b-xl mx-10 lg:mx-20 2xl:mx-44 transition-all ease-in-out dark:bg-zinc-900"
-              : "bg-zinc-900 transition-all ease-in-out"
-          }`}
-        >
+      <div className="fixed w-full top-0 left-0 right-0">
+        <div className="bg-green-800 dark:bg-zinc-900">
           {/* MOBILE MENU */}
           <div>
             <div className="flex items-center justify-between px-10 py-5 md:hidden">
@@ -78,24 +56,36 @@ const Navbar = ({ setTheme }) => {
             <div
               className={
                 isOpen
-                  ? "absolute left-0 right-0 flex flex-col bg-zinc-900 gap-4 justify-center items-center py-5 text-white md:hidden"
+                  ? "absolute left-0 right-0 flex flex-col bg-green-800 dark:bg-zinc-900 gap-4 justify-center items-center py-5 text-white md:hidden"
                   : "hidden"
               }
             >
-              <a href="/about" className="hover:text-green-600">
+              <a
+                href="/about"
+                className="hover:text-zinc-950 dark:hover:text-green-600"
+              >
                 About
               </a>
-              <a href="/project-experience" className="hover:text-green-600">
+              <a
+                href="/project-experience"
+                className="hover:text-zinc-950 dark:hover:text-green-600"
+              >
                 Project
               </a>
-              <a href="/article" className="hover:text-green-600">
+              <a
+                href="/article"
+                className="hover:text-zinc-950 dark:hover:text-green-600"
+              >
                 Article
               </a>
-              <a href="/contact" className="hover:text-green-600">
+              <a
+                href="/contact"
+                className="hover:text-zinc-950 dark:hover:text-green-600"
+              >
                 Contact
               </a>
               <button
-                className="bg-green-700 rounded-md hover:bg-green-800 px-3 py-1"
+                className="bg-zinc-100 text-green-600 rounded-md hover:bg-zinc-50 px-3 py-1"
                 onClick={setTheme}
               >
                 Change Theme
@@ -115,24 +105,33 @@ const Navbar = ({ setTheme }) => {
             </div>
 
             <div className="flex gap-1">
-              <a href="/about" className="hover:bg-green-800 px-3 py-1">
+              <a
+                href="/about"
+                className="hover:bg-zinc-50 hover:text-green-700 dark:hover:text-white hover:transition-all hover:ease-in-out dark:hover:bg-green-800 px-3 py-1"
+              >
                 About
               </a>
               <a
                 href="/project-experience"
-                className="hover:bg-green-800 px-3 py-1"
+                className="hover:bg-zinc-50 hover:text-green-700 dark:hover:text-white hover:transition-all hover:ease-in-out dark:hover:bg-green-800 px-3 py-1"
               >
                 Project
               </a>
-              <a href="/article" className="hover:bg-green-800 px-3 py-1">
+              <a
+                href="/article"
+                className="hover:bg-zinc-50 hover:text-green-700 dark:hover:text-white hover:transition-all hover:ease-in-out dark:hover:bg-green-800 px-3 py-1"
+              >
                 Article
               </a>
-              <a href="/contact" className="hover:bg-green-800 px-3 py-1">
+              <a
+                href="/contact"
+                className="hover:bg-zinc-50 hover:text-green-700 dark:hover:text-white hover:transition-all hover:ease-in-out dark:hover:bg-green-800 px-3 py-1"
+              >
                 Contact
               </a>
             </div>
             <button
-              className="bg-green-700 rounded-md hover:bg-green-800 px-3 py-1"
+              className="bg-zinc-100 text-green-600 rounded-md hover:bg-zinc-50 px-3 py-1"
               onClick={setTheme}
             >
               Change Theme
