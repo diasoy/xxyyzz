@@ -17,51 +17,46 @@ const ProjectHeader = () => {
               UI - UX Project
             </h1>
             <ul className="grid gap-6 md:grid-cols-2 xl:grid-cols-3 lg:items-center 2xl:grid-cols-4">
-              <li>
-                <div className="border rounded-xl bg-green-700 text-white">
-                  <img
-                    src={kiddyLearn}
-                    alt="kiddylearn"
-                    className="w-full h-64 object-cover rounded-t-lg"
-                  />
-                  <div className="flex flex-col justify-center items-center py-6 px-3 mx-3 gap-4">
-                    <h1 className="font-semibold 2xl:text-lg text-center">
-                      KiddyLearn
-                    </h1>
-                    <p className="text-center">
-                      Aplikasi Permainan dan Belajar Anak Menyenangkan
-                    </p>
-                    <Link
-                      to={"/project-experience/kiddy-learn-adventures"}
-                      className="bg-green-50 px-3 py-1 text-green-700 rounded-md font-semibold"
-                    >
-                      See for details
-                    </Link>
+              <li className="">
+                <Link
+                  to={"/project-experience/kiddy-learn-adventures"}
+                  className=""
+                >
+                  <div className="border rounded-xl hover:border-[4px] hover:border-green-700 dark:hover:border-[4px] dark:hover:border-white bg-green-700 text-white transition-all duration-500">
+                    <img
+                      src={kiddyLearn}
+                      alt="kiddylearn"
+                      className="w-full h-64 object-cover"
+                    />
+                    <div className="flex flex-col justify-center items-center py-6 px-3 mx-3 gap-4">
+                      <h1 className="font-semibold 2xl:text-lg text-center">
+                        KiddyLearn
+                      </h1>
+                      <p className="text-center">
+                        Aplikasi Permainan dan Belajar Anak Menyenangkan
+                      </p>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </li>
               <li>
-                <div className="border rounded-xl bg-green-700 text-white">
-                  <img
-                    src={qris}
-                    alt="qris"
-                    className="w-full h-64 object-cover rounded-t-lg"
-                  />
-                  <div className="flex flex-col justify-center items-center py-6 px-3 mx-3 gap-4">
-                    <h1 className="font-semibold 2xl:text-lg text-center">
-                      Qris
-                    </h1>
-                    <p className="text-center">
-                      Aplikasi Pembayaran dan Penyimpanan Uang Digital
-                    </p>
-                    <Link
-                      to={"/project-experience/qris"}
-                      className="bg-green-50 px-3 py-1 text-green-700 rounded-md font-semibold"
-                    >
-                      See for details
-                    </Link>
+                <Link to={"/project-experience/qris"} className="">
+                  <div className="border rounded-xl hover:border-[4px] hover:border-green-700 dark:hover:border-[4px] dark:hover:border-white bg-green-700 text-white transition-all duration-500">
+                    <img
+                      src={qris}
+                      alt="qris"
+                      className="w-full h-64 object-cover"
+                    />
+                    <div className="flex flex-col justify-center items-center py-6 px-3 mx-3 gap-4">
+                      <h1 className="font-semibold 2xl:text-lg text-center">
+                        Qris
+                      </h1>
+                      <p className="text-center">
+                        Aplikasi Pembayaran dan Penyimpanan Uang Digital
+                      </p>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </li>
             </ul>
           </div>
