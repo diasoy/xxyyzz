@@ -10,8 +10,17 @@ import merch from "../../../assets/UIUX-QRIS/QRIS Merch.png";
 import scan from "../../../assets/UIUX-QRIS/Scan Qris.png";
 import popupBerhasil1 from "../../../assets/UIUX-QRIS/Popup berhasil.png";
 import popupBerhasil2 from "../../../assets/UIUX-QRIS/Popup berhasil-1.png";
+import { useEffect } from "react";
 
 const Qris = () => {
+  useEffect(() => {
+    const theme = localStorage.getItem("theme");
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, []);
   return (
     <>
       <div className="font-[Montserrat] dark:bg-zinc-800 dark:text-white">

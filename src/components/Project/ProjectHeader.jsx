@@ -26,7 +26,7 @@ const ProjectHeader = () => {
                     <img
                       src={kiddyLearn}
                       alt="kiddylearn"
-                      className="w-full h-64 object-cover"
+                      className="w-full h-64 rounded-t-lg object-cover"
                     />
                     <div className="flex flex-col justify-center items-center py-6 px-3 mx-3 gap-4">
                       <h1 className="font-semibold 2xl:text-lg text-center">
@@ -45,7 +45,7 @@ const ProjectHeader = () => {
                     <img
                       src={qris}
                       alt="qris"
-                      className="w-full h-64 object-cover"
+                      className="w-full h-64 rounded-t-lg object-cover"
                     />
                     <div className="flex flex-col justify-center items-center py-6 px-3 mx-3 gap-4">
                       <h1 className="font-semibold 2xl:text-lg text-center">

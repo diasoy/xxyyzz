@@ -23,8 +23,17 @@ import matematika from "../../../assets/UIUX-KiddyLearn Adventures/Hitung.png";
 import setting1 from "../../../assets/UIUX-KiddyLearn Adventures/Settings.png";
 import setting2 from "../../../assets/UIUX-KiddyLearn Adventures/Settings-1.png";
 import DesignThinking from "./DesignThinking";
+import { useEffect } from "react";
 
 const KiddyLearn = () => {
+  useEffect(() => {
+    const theme = localStorage.getItem("theme");
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, []);
   return (
     <>
       <div className="font-[Montserrat] dark:bg-zinc-800 dark:text-white">

@@ -71,28 +71,17 @@ const Profile = () => {
           </div>
           <div>
             <div className="flex justify-center items-center">
-              <a
-                href="https://storyset.com/people"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src={profileGifLight}
-                  alt="profileGif"
-                  className="dark:hidden cursor-default"
-                />
-              </a>
-              <a
-                href="https://storyset.com/people"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src={profileGifDark}
-                  alt="profileGif"
-                  className="dark:block hidden cursor-default"
-                />
-              </a>
+              <img
+                src={profileGifLight}
+                alt="profileGif"
+                className="dark:hidden cursor-default"
+              />
+
+              <img
+                src={profileGifDark}
+                alt="profileGif"
+                className="dark:block hidden cursor-default"
+              />
             </div>
           </div>
         </div>

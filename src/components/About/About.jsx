@@ -8,12 +8,30 @@ import dasarJavascript from "../../assets/sertifikat/dasar javascript.png";
 import pengembangSoftware from "../../assets/sertifikat/pengembang software.png";
 import sql from "../../assets/sertifikat/sql.png";
 import webReact from "../../assets/sertifikat/web react.png";
+import html from "../../assets/sertifikat/html.png";
+import css from "../../assets/sertifikat/css cp.png";
+import cssFramework from "../../assets/sertifikat/css framework.png";
+import jscp from "../../assets/sertifikat/js cp.png";
+import jsDom from "../../assets/sertifikat/js dom.png";
+import jsAsync from "../../assets/sertifikat/jsasynchronous.png";
+import ajaxweb from "../../assets/sertifikat/ajaxwebapi.png";
+import expressejs from "../../assets/sertifikat/expressejs.png";
+import { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    const theme = localStorage.getItem("theme");
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, []);
+
   return (
     <>
       <div className="font-[Montserrat] bg-zinc-50 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-50">
-        <div className="mx-10">
+        <div className="mx-10 lg:mx-24">
           <h1 className="text-center p-6 font-bold text-lg lg:text-xl">
             About Me
           </h1>
@@ -46,7 +64,7 @@ const About = () => {
             </h1>
             <ul className="flex flex-col gap-10 md:grid md:grid-cols-2 lg:grid-cols-3">
               <li className="list-disc">
-                <h1 className="text-sm">Fun Treasured</h1>
+                <h1 className="text-sm">FANTASTIS</h1>
                 <img
                   src={fantastis}
                   alt="fantastis"
@@ -54,9 +72,7 @@ const About = () => {
                 />
               </li>
               <li className="list-disc">
-                <h1 className="text-sm">
-                  Panitia Divisi Perlengkapan dan Konsumsi
-                </h1>
+                <h1 className="text-sm">Smantass Campus Expo 2023</h1>
                 <img
                   src={campex}
                   alt="campex"
@@ -65,7 +81,7 @@ const About = () => {
               </li>
               <li className="list-disc">
                 <h1 className="text-sm">
-                  Panitia Divisi Perlengkapan dan Konsumsi
+                  Studi Mengenal Sistem Informasi (DIMENSI)
                 </h1>
                 <img
                   src={dimensi}
@@ -75,13 +91,13 @@ const About = () => {
               </li>
               <li className="list-disc">
                 <h1 className="text-sm">
-                  Panitia Divisi Perlengkapan dan Konsumsi
+                  Eksplorasi Diri Sistem Informasi (EDISI)
                 </h1>
                 <img src={edisi} alt="edisi" className="rounded-lg shadow-lg" />
               </li>
               <li className="list-disc">
                 <h1 className="text-sm">
-                  Panitia Divisi Perlengkapan dan Konsumsi
+                  Puncak Pengaderan Sistem Informasi (PENSI)
                 </h1>
                 <img
                   src={edisi}
@@ -95,57 +111,89 @@ const About = () => {
           <div className="mt-12">
             <h1 className="underline underline-offset-4 font-bold">Course</h1>
             <ul className="flex flex-col gap-10 md:grid md:grid-cols-2 lg:grid-cols-3">
-              <li className="list-disc">
-                <h1 className="text-sm">Fun Treasured</h1>
+              <li className="">
                 <img
                   src={dasarProyek}
                   alt="manajemen proyek"
                   className="rounded-lg shadow-lg"
                 />
               </li>
-              <li className="list-disc">
-                <h1 className="text-sm">
-                  Panitia Divisi Perlengkapan dan Konsumsi
-                </h1>
+              <li className="">
                 <img
                   src={googleCloud}
                   alt="google cloud"
                   className="rounded-lg shadow-lg"
                 />
               </li>
-              <li className="list-disc">
-                <h1 className="text-sm">
-                  Panitia Divisi Perlengkapan dan Konsumsi
-                </h1>
+              <li className="">
                 <img
                   src={dasarJavascript}
                   alt="dasar javascript"
                   className="rounded-lg shadow-lg"
                 />
               </li>
-              <li className="list-disc">
-                <h1 className="text-sm">
-                  Panitia Divisi Perlengkapan dan Konsumsi
-                </h1>
+              <li className="">
                 <img
                   src={pengembangSoftware}
                   alt="pengembang software"
                   className="rounded-lg shadow-lg"
                 />
               </li>
-              <li className="list-disc">
-                <h1 className="text-sm">
-                  Panitia Divisi Perlengkapan dan Konsumsi
-                </h1>
+              <li className="">
                 <img src={sql} alt="sql" className="rounded-lg shadow-lg" />
               </li>
-              <li className="list-disc">
-                <h1 className="text-sm">
-                  Panitia Divisi Perlengkapan dan Konsumsi
-                </h1>
+              <li className="">
                 <img
                   src={webReact}
                   alt="web react"
+                  className="rounded-lg shadow-lg"
+                />
+              </li>
+              <li className="">
+                <img src={html} alt="html" className="rounded-lg shadow-lg" />
+              </li>
+              <li className="">
+                <img src={css} alt="css" className="rounded-lg shadow-lg" />
+              </li>
+              <li className="">
+                <img
+                  src={cssFramework}
+                  alt="dasar javascript"
+                  className="rounded-lg shadow-lg"
+                />
+              </li>
+              <li className="">
+                <img
+                  src={jscp}
+                  alt="pengembang software"
+                  className="rounded-lg shadow-lg"
+                />
+              </li>
+              <li className="">
+                <img
+                  src={jsDom}
+                  alt="js DOM"
+                  className="rounded-lg shadow-lg"
+                />
+              </li>
+              <li className="">
+                <img
+                  src={jsAsync}
+                  alt="js Async"
+                  className="rounded-lg shadow-lg"
+                />
+              </li>
+              <li className="">
+                <img
+                  src={ajaxweb}
+                  alt="ajax web"
+                  className="rounded-lg shadow-lg"
+                />
+              </li>
+              <li className="">
+                <img
+                  src={expressejs}
+                  alt="express ejs"
                   className="rounded-lg shadow-lg"
                 />
               </li>

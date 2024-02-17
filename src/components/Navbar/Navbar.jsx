@@ -66,12 +66,12 @@ const Navbar = ({ setTheme }) => {
               >
                 About
               </a>
-              <a
+              {/* <a
                 href="/project-experience"
                 className="hover:text-zinc-950 dark:hover:text-green-600"
               >
                 Project
-              </a>
+              </a> */}
               <a
                 href="/article"
                 className="hover:text-zinc-950 dark:hover:text-green-600"
@@ -79,7 +79,7 @@ const Navbar = ({ setTheme }) => {
                 Article
               </a>
               <a
-                href="/contact"
+                href="http://wa.me/+6281934760910"
                 className="hover:text-zinc-950 dark:hover:text-green-600"
               >
                 Contact
@@ -111,12 +111,12 @@ const Navbar = ({ setTheme }) => {
               >
                 About
               </a>
-              <a
+              {/* <a
                 href="/project-experience"
                 className="hover:bg-zinc-50 hover:text-green-700 dark:hover:text-white hover:transition-all hover:ease-in-out dark:hover:bg-green-800 px-3 py-1"
               >
                 Project
-              </a>
+              </a> */}
               <a
                 href="/article"
                 className="hover:bg-zinc-50 hover:text-green-700 dark:hover:text-white hover:transition-all hover:ease-in-out dark:hover:bg-green-800 px-3 py-1"
@@ -124,7 +124,7 @@ const Navbar = ({ setTheme }) => {
                 Article
               </a>
               <a
-                href="/contact"
+                href="http://wa.me/+6281934760910"
                 className="hover:bg-zinc-50 hover:text-green-700 dark:hover:text-white hover:transition-all hover:ease-in-out dark:hover:bg-green-800 px-3 py-1"
               >
                 Contact
