@@ -4,6 +4,7 @@
 import profileGifLight from "../../assets/gifLight.gif";
 import profileGifDark from "../../assets/gifDark.gif";
 import { InstagramLogo, LinkedinLogo, GithubLogo } from "@phosphor-icons/react";
+import { Link } from "react-router-dom";
 
 const Profile = () => {
   return (
@@ -30,43 +31,43 @@ const Profile = () => {
               </p>
             </div>
             <div className="flex mt-8 gap-5 items-center justify-center lg:justify-start">
-              <a
+              <Link
                 href="https://www.instagram.com/diasnormann?igsh=MXg5b3FiZjVhc2p1cA=="
                 target="_blank"
                 rel="noreferrer"
               >
                 <InstagramLogo size={44} className="hover:animate-spin" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.linkedin.com/in/diasnormann?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 target="_blank"
                 rel="noreferrer"
               >
                 <LinkedinLogo size={44} className="hover:animate-spin" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://github.com/diasoy"
                 target="_blank"
                 rel="noreferrer"
               >
                 <GithubLogo size={44} className="hover:animate-spin" />
-              </a>
+              </Link>
             </div>
             <div className="flex gap-2 mt-10 justify-center lg:justify-start ">
-              <a
+              <Link
                 href=""
                 className="text-white bg-green-800 px-4 py-2 rounded-md font-semibold hover:bg-green-950"
               >
                 Download CV
-              </a>
-              <a
+              </Link>
+              <Link
                 href="http://wa.me/+6281934760910"
                 className="border border-black px-4 py-2 rounded-md hover:bg-green-900 hover:text-white dark:border-white"
                 target="_blank"
                 rel="noreferrer"
               >
                 Contact Me
-              </a>
+              </Link>
             </div>
           </div>
           <div>
