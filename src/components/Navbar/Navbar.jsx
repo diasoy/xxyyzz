@@ -88,7 +88,7 @@ const Navbar = ({ theme, setTheme }) => {
               >
                 Contact
               </Link>
-              <div className="hover:cursor-pointer hover:transition-all hover:animate-bounce">
+              <div className="hover:cursor-pointer">
                 {theme === "dark" ? (
                   <Moon size={24} onClick={toggleTheme} />
                 ) : (
@@ -135,7 +135,7 @@ const Navbar = ({ theme, setTheme }) => {
                 Contact
               </Link>
             </div>
-            <div className="hover:cursor-pointer hover:transition-all hover:animate-bounce">
+            <div className="hover:cursor-pointer">
               {theme === "dark" ? (
                 <Moon size={32} onClick={toggleTheme} />
               ) : (

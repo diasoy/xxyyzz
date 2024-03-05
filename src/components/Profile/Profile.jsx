@@ -23,7 +23,7 @@ const Profile = () => {
                   Student
                 </span>
               </h1>
-              <p className="text-center 2xl:text-xl lg:text-left">
+              <p className="text-center 2xl:text-lg lg:text-left">
                 Undergraduate Student at UPN "Veteran" Jawa Timur, majoring in
                 Information System. I'm a passionate person who loves to learn
                 new things about technology and always open to new
@@ -32,21 +32,21 @@ const Profile = () => {
             </div>
             <div className="flex mt-8 gap-5 items-center justify-center lg:justify-start">
               <Link
-                href="https://www.instagram.com/diasnormann?igsh=MXg5b3FiZjVhc2p1cA=="
+                to="https://www.instagram.com/diasnormann?igsh=MXg5b3FiZjVhc2p1cA=="
                 target="_blank"
                 rel="noreferrer"
               >
                 <InstagramLogo size={44} className="hover:animate-spin" />
               </Link>
               <Link
-                href="https://www.linkedin.com/in/diasnormann?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                to="https://www.linkedin.com/in/diasnormann?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 target="_blank"
                 rel="noreferrer"
               >
                 <LinkedinLogo size={44} className="hover:animate-spin" />
               </Link>
               <Link
-                href="https://github.com/diasoy"
+                to="https://github.com/diasoy"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -55,13 +55,13 @@ const Profile = () => {
             </div>
             <div className="flex gap-2 mt-10 justify-center lg:justify-start ">
               <Link
-                href=""
+                to=""
                 className="text-white bg-green-800 px-4 py-2 rounded-md font-semibold hover:bg-green-950"
               >
                 Download CV
               </Link>
               <Link
-                href="http://wa.me/+6281934760910"
+                to="http://wa.me/+6281934760910"
                 className="border border-black px-4 py-2 rounded-md hover:bg-green-900 hover:text-white dark:border-white"
                 target="_blank"
                 rel="noreferrer"

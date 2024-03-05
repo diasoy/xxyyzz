@@ -34,7 +34,7 @@ const ProjectHeader = () => {
                         KiddyLearn
                       </h1>
                       <p className="text-center">
-                        Aplikasi Permainan dan Belajar Anak Menyenangkan
+                        Aplikasi Permainan Belajar Anak Menyenangkan
                       </p>
                     </div>
                   </div>

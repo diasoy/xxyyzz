@@ -2,6 +2,7 @@ import fantastis from "../../assets/sertifikat/fantastis.jpg";
 import campex from "../../assets/sertifikat/campex.jpg";
 import dimensi from "../../assets/sertifikat/dimensi.png";
 import edisi from "../../assets/sertifikat/edisi.jpg";
+import pensi from "../../assets/sertifikat/pensi.png";
 import googleCloud from "../../assets/sertifikat/googlecloud.png";
 import dasarProyek from "../../assets/sertifikat/dasar manajemen proyek.png";
 import dasarJavascript from "../../assets/sertifikat/dasar javascript.png";
@@ -30,30 +31,24 @@ const About = () => {
 
   return (
     <>
-      <div className="font-[Montserrat] bg-zinc-50 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-50">
+      <div className="bg-zinc-50 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-50">
         <div className="mx-10 lg:mx-24">
           <h1 className="text-center p-6 font-bold text-lg lg:text-xl">
             About Me
           </h1>
           <p className="text-sm text-justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-            magnam quaerat id numquam, fugiat accusantium mollitia consequatur
-            ullam nisi, et alias soluta, sunt animi. Laboriosam doloremque
-            necessitatibus quo porro. Quia debitis necessitatibus quaerat
-            impedit exercitationem, aut iure voluptas vero nihil eius? Autem
-            iusto, repellat vero ut unde voluptate placeat laborum corporis
-            dolorum, aperiam deleniti consequuntur, ea quam eos nihil ipsum quas
-            itaque reiciendis animi expedita ullam! Quis fugiat vel ratione! Eum
-            eveniet quasi modi praesentium ratione ex, nihil natus a libero
-            animi eos veniam quod quisquam deleniti reprehenderit sapiente alias
-            delectus excepturi iste. Exercitationem architecto pariatur velit,
-            eum suscipit adipisci doloribus consequatur quas molestias deleniti
-            dolorem tenetur, magnam a cupiditate voluptatem debitis maxime
-            autem! Labore iste facere sed corporis, accusantium reiciendis sunt
-            quia error blanditiis. Hic voluptatem earum provident omnis
-            accusantium voluptatum quod? Reiciendis, eos odit suscipit
-            recusandae neque odio qui eaque ex est maxime a quae sit illum
-            velit?
+            Saya merupakan seorang mahasiswa jurusan Sistem Informasi di salah
+            satu universitas di Surabaya yaitu UPN Veteran Jawa Timur. Saya
+            merupakan mahasiswa prodi Sistem Informasi dan saat ini berada pada
+            semester 4. Saya merupakan seseorang yang memiliki ketertarikan pada
+            bidang Teknologi Informasi. Saya memiliki kemampuan dalam membuat
+            desain UI/UX menggunakan alat desain Figma. Saya juga memiliki
+            kemampuan dalam membuat halaman web yang fungsional menggunakan
+            HTML, TailwindCSS, dan JavaScript. Saya juga memiliki kemampuan
+            dalam menggunakan kerangka kerja front-end React.js untuk
+            mempercepat pengembangan dan meningkatkan skalabilitas. Saya juga
+            memiliki kemampuan untuk memastikan keterjangkauan (accessibility)
+            dan responsivitas pada berbagai perangkat dan browser.
           </p>
           <h1 className="mt-10 text-center text-lg mb-4 font-bold">
             Activities during my college years
@@ -62,7 +57,7 @@ const About = () => {
             <h1 className="underline underline-offset-4 font-bold">
               Volunteer
             </h1>
-            <ul className="flex flex-col gap-10 md:grid md:grid-cols-2 lg:grid-cols-3">
+            <ul className="flex flex-col mx-10 gap-10 md:grid md:grid-cols-2 lg:grid-cols-3">
               <li className="list-disc">
                 <h1 className="text-sm">FANTASTIS</h1>
                 <img
@@ -93,17 +88,13 @@ const About = () => {
                 <h1 className="text-sm">
                   Eksplorasi Diri Sistem Informasi (EDISI)
                 </h1>
-                <img src={edisi} alt="edisi" className="rounded-lg shadow-lg" />
+                <img src={edisi} alt="edisi" className="rounded-lg shadow-lg"/>
               </li>
               <li className="list-disc">
                 <h1 className="text-sm">
                   Puncak Pengaderan Sistem Informasi (PENSI)
                 </h1>
-                <img
-                  src={edisi}
-                  alt="dimensi"
-                  className="rounded-lg shadow-lg"
-                />
+                <img src={pensi} alt="pensi" className="rounded-lg shadow-lg" />
               </li>
             </ul>
           </div>

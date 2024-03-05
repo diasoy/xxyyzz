@@ -34,7 +34,7 @@ const App = () => {
 
   return (
     <>
-      <div className=" text-black font-[Montserrat] dark:bg-zinc-800 dark:text-white">
+      <div className=" text-black dark:bg-zinc-800 dark:text-white">
         <Navbar setTheme={handleTheme} theme={theme} />
         <Profile />
         <AboutHeader />

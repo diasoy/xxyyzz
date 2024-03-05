@@ -36,7 +36,7 @@ const KiddyLearn = () => {
   }, []);
   return (
     <>
-      <div className="font-[Montserrat] dark:bg-zinc-800 dark:text-white">
+      <div className="dark:bg-zinc-800 dark:text-white">
         <div className="flex flex-col pt-12 mx-10 gap-4 md:mx-32 lg:mx-64 2xl:mx-96">
           <div className="flex flex-col gap-4 mb-8">
             <h1 className="font-bold text-xl 2xl:text-2xl">
