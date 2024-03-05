@@ -28,16 +28,14 @@ const Qris = () => {
           <div className="flex flex-col gap-4 mb-8">
             <h1 className="font-bold text-xl 2xl:text-2xl">QRIS</h1>
             <p className="text-justify text-sm 2xl:text-base">
-              “KiddyLearn Adventures” adalah sebuah aplikasi pembelajaran yang
-              dihadirkan dengan konsep user interface yang menarik dan
-              interaktif, dirancang khusus untuk anak-anak. “KiddyLearn
-              Adventures” adalah aplikasi pembelajaran yang dirancang khusus
-              untuk anak-anak usia dini hingga pra-sekolah. Aplikasi ini akan
-              menawarkan beragam pembelajaran yang menggabungkan permainan,
-              cerita, gambar, dan aktivitas yang menarik. Tujuan utama aplikasi
-              ini adalah untuk membuat pembelajaran menjadi pengalaman yang
-              menyenangkan bagi anak-anak, sehingga mereka lebih termotivasi
-              untuk belajar.
+              QRIS merupakan aplikasi pembayaran dan penyimpanan uang digital
+              yang memungkinkan pengguna untuk melakukan pembayaran dan
+              menyimpan uang secara digital. Aplikasi ini juga memungkinkan
+              pengguna untuk membeli barang dan jasa secara online. Aplikasi ini
+              juga memungkinkan pengguna untuk melihat event yang sedang
+              berlangsung dan juga melihat riwayat event yang sudah selesai.
+              Aplikasi ini juga memungkinkan pengguna untuk melihat profil
+              pengguna dan juga melihat QRIS Merch yang sedang dijual.
             </p>
             <div className="flex flex-col justify-start items-start">
               <h1>Role :</h1>

@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Moon, SunDim } from "@phosphor-icons/react";
+import { Moon, SunDim, WhatsappLogo } from "@phosphor-icons/react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -68,7 +68,7 @@ const Navbar = ({ theme, setTheme }) => {
                 to="/about"
                 className="hover:text-zinc-950 dark:hover:text-green-600"
               >
-                About
+                My Activity
               </Link>
               {/* <Link
                 to="/project-experience"
@@ -114,7 +114,7 @@ const Navbar = ({ theme, setTheme }) => {
                 to="/about"
                 className="hover:bg-zinc-50 hover:text-green-700 dark:hover:text-white hover:transition-all hover:ease-in-out dark:hover:bg-green-800 px-3 py-1"
               >
-                About
+                My Activity
               </Link>
               {/* <Link
                 to="/project-experience"
@@ -145,6 +145,13 @@ const Navbar = ({ theme, setTheme }) => {
           </div>
         </div>
       </div>
+
+      <Link to="http://wa.me/+6281934760910" target="_blank" rel="noreferrer">
+        <WhatsappLogo
+          size={56}
+          className="fixed bottom-5 right-5 animate-bounce text-green-400 hover:animate-none hover:cursor-pointer"
+        />
+      </Link>
     </>
   );
 };

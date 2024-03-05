@@ -1,4 +1,5 @@
 import AboutHeader from "./components/About/AboutHeader";
+import Contact from "./components/Contact/Contact";
 // import ArticleHeader from "./components/Article/ArticleHeader";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
@@ -40,6 +41,7 @@ const App = () => {
         <AboutHeader />
         <ProjectHeader />
         {/* <ArticleHeader /> */}
+        <Contact />
         <Footer />
       </div>
     </>
