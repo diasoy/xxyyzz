@@ -1,5 +1,4 @@
 import AboutHeader from "./components/About/AboutHeader";
-import Contact from "./components/Contact/Contact";
 // import ArticleHeader from "./components/Article/ArticleHeader";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
@@ -35,13 +34,12 @@ const App = () => {
 
   return (
     <>
-      <div className=" text-black dark:bg-zinc-800 dark:text-white">
+      <div className="text-black dark:bg-zinc-800 dark:text-white">
         <Navbar setTheme={handleTheme} theme={theme} />
         <Profile />
         <AboutHeader />
         <ProjectHeader />
         {/* <ArticleHeader /> */}
-        <Contact />
         <Footer />
       </div>
     </>

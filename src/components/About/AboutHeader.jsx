@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const AboutHeader = () => {
   return (
     <>
-      <div className="lg:py-10 dark:bg-zinc-800 dark:text-white">
+      <div id="about" className="lg:py-10 dark:bg-zinc-800 dark:text-white">
         <div className="mx-12 flex flex-col gap-4 md:mx-24 lg:mx-32 xl:mx-60">
           <h1 className="text-2xl lg:text-3xl font-bold text-center">
             WHAT I DO
@@ -69,7 +69,7 @@ const AboutHeader = () => {
           </ul>
           <Link
             to="/about"
-            className="text-green-600 hover:text-green-500 text-xl mt-10"
+            className="text-green-700 hover:text-green-500 text-xl mt-10"
           >
             Lihat saya lebih jauh
           </Link>

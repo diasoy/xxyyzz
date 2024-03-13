@@ -3,13 +3,21 @@
 // import linkedin from "../../assets/images/linkedin.png";
 import profileGifLight from "../../assets/gifLight.gif";
 import profileGifDark from "../../assets/gifDark.gif";
-import { InstagramLogo, LinkedinLogo, GithubLogo } from "@phosphor-icons/react";
+import {
+  InstagramLogo,
+  LinkedinLogo,
+  GithubLogo,
+  DownloadSimple,
+} from "@phosphor-icons/react";
 import { Link } from "react-router-dom";
 
 const Profile = () => {
   return (
     <>
-      <div className=" mx-8 py-24 lg:py-20 lg:mx-20 xl:mx-12 2xl:mx-32 mt-10 items-center justify-center dark:bg-zinc-800 dark:text-white">
+      <div
+        id="profile"
+        className=" mx-8 py-24 lg:py-20 lg:mx-20 xl:mx-12 2xl:mx-32 mt-10 items-center justify-center dark:bg-zinc-800 dark:text-white"
+      >
         <div className="flex flex-col-reverse lg:grid grid-cols-2 justify-center items-center">
           <div className="xl:mx-24 lg:items-start lg:px-4 lg:gap-4">
             <div className="flex items-center flex-col gap-2 mt-8 lg:items-start lg:gap-6">
@@ -36,37 +44,39 @@ const Profile = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <InstagramLogo size={44} className="hover:animate-spin" />
+                <InstagramLogo
+                  size={44}
+                  className="hover:animate-spin text-green-700"
+                />
               </Link>
               <Link
                 to="https://www.linkedin.com/in/diasnormann?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 target="_blank"
                 rel="noreferrer"
               >
-                <LinkedinLogo size={44} className="hover:animate-spin" />
+                <LinkedinLogo
+                  size={44}
+                  className="hover:animate-spin text-green-700"
+                />
               </Link>
               <Link
                 to="https://github.com/diasoy"
                 target="_blank"
                 rel="noreferrer"
               >
-                <GithubLogo size={44} className="hover:animate-spin" />
+                <GithubLogo
+                  size={44}
+                  className="hover:animate-spin text-green-700"
+                />
               </Link>
             </div>
-            <div className="flex gap-2 mt-10 justify-center lg:justify-start ">
+            <div className="flex gap-2 mt-10 justify-center lg:justify-start">
               <Link
                 to=""
-                className="text-white bg-green-800 px-4 py-2 rounded-md font-semibold hover:bg-green-950"
+                className="text-white flex items-center justify-center gap-4 bg-green-800 px-10 py-2 rounded-md font-semibold hover:bg-green-950"
               >
+                <DownloadSimple size={24} />
                 Download CV
-              </Link>
-              <Link
-                to="http://wa.me/+6281934760910"
-                className="border border-black px-4 py-2 rounded-md hover:bg-green-900 hover:text-white dark:border-white"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Contact Me
               </Link>
             </div>
           </div>

@@ -1,33 +1,51 @@
 /* eslint-disable react/prop-types */
+import { Link as ScrollLink } from "react-scroll";
 import { Moon, SunDim, WhatsappLogo } from "@phosphor-icons/react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const Navbar = ({ theme, setTheme }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
+  useEffect(() => {
+    const closeMenu = () => {
+      setIsOpen(false);
+    };
+
+    window.addEventListener("click", closeMenu);
+
+    return () => {
+      window.removeEventListener("click", closeMenu);
+    };
+  }, []);
+
+  const toggleMenu = (event) => {
+    event.stopPropagation();
+    setIsOpen(!isOpen);
+  };
   return (
     <>
       <div className="fixed w-full top-0 left-0 right-0">
         <div className="bg-green-800 dark:bg-zinc-900">
-          {/* MOBILE MENU */}
           <div>
             <div className="flex items-center justify-between px-10 py-5 md:hidden">
               <div>
-                <Link
-                  to="/"
-                  className="font-semibold text-white text-xl hover:text-green-600"
+                <ScrollLink
+                  to="profile"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={1000}
+                  className="hover:cursor-pointer font-semibold text-white text-xl hover:text-green-600"
                 >
                   diasnorman.
-                </Link>
+                </ScrollLink>
               </div>
               <div>
-                <button
-                  className="focus:outline-none"
-                  onClick={() => setIsOpen(!isOpen)}
-                >
+                <button className="focus:outline-none" onClick={toggleMenu}>
                   <svg
                     className="w-6 h-6 text-white hover:text-green-600 "
                     fill="none"
@@ -64,30 +82,33 @@ const Navbar = ({ theme, setTheme }) => {
                   : "hidden"
               }
             >
-              <Link
-                to="/about"
-                className="hover:text-zinc-950 dark:hover:text-green-600"
+              <ScrollLink
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={1000}
+                className="hover:text-zinc-950 cursor-pointer dark:hover:text-green-600"
               >
-                My Activity
-              </Link>
-              {/* <Link
-                to="/project-experience"
-                className="hover:text-zinc-950 dark:hover:text-green-600"
+                Activity
+              </ScrollLink>
+              <ScrollLink
+                to="project"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={1000}
+                className="hover:text-zinc-950 cursor-pointer dark:hover:text-green-600"
               >
                 Project
-              </a> */}
+              </ScrollLink>
               <Link
                 to="/article"
-                className="hover:text-zinc-950 dark:hover:text-green-600"
+                className="hover:text-zinc-950 cursor-pointer dark:hover:text-green-600"
               >
                 Article
               </Link>
-              <Link
-                to="http://wa.me/+6281934760910"
-                className="hover:text-zinc-950 dark:hover:text-green-600"
-              >
-                Contact
-              </Link>
+
               <div className="hover:cursor-pointer">
                 {theme === "dark" ? (
                   <Moon size={24} onClick={toggleTheme} />
@@ -101,38 +122,44 @@ const Navbar = ({ theme, setTheme }) => {
           {/* WEB MENU */}
           <div className="hidden md:flex justify-between items-center gap-4 w-full px-12 py-8 lg:px-32 xl:px-52 text-white">
             <div>
-              <Link
-                to="/"
-                className="text-2xl font-semibold text-white hover:text-green-600"
-              >
-                diasnorman.
-              </Link>
+            <ScrollLink
+                  to="profile"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={1000}
+                  className="hover:cursor-pointer font-semibold text-white text-xl hover:text-green-600"
+                >
+                  diasnorman.
+                </ScrollLink>
             </div>
 
             <div className="flex gap-1">
-              <Link
-                to="/about"
-                className="hover:bg-zinc-50 hover:text-green-700 dark:hover:text-white hover:transition-all hover:ease-in-out dark:hover:bg-green-800 px-3 py-1"
+              <ScrollLink
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={1000}
+                className="hover:cursor-pointer hover:bg-zinc-50 hover:text-green-700 dark:hover:text-white hover:transition-all hover:ease-in-out dark:hover:bg-green-800 px-3 py-1"
               >
-                My Activity
-              </Link>
-              {/* <Link
-                to="/project-experience"
-                className="hover:bg-zinc-50 hover:text-green-700 dark:hover:text-white hover:transition-all hover:ease-in-out dark:hover:bg-green-800 px-3 py-1"
+                Activity
+              </ScrollLink>
+              <ScrollLink
+                to="project"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={1000}
+                className="hover:cursor-pointer hover:bg-zinc-50 hover:text-green-700 dark:hover:text-white hover:transition-all hover:ease-in-out dark:hover:bg-green-800 px-3 py-1"
               >
                 Project
-              </a> */}
+              </ScrollLink>
               <Link
                 to="/article"
                 className="hover:bg-zinc-50 hover:text-green-700 dark:hover:text-white hover:transition-all hover:ease-in-out dark:hover:bg-green-800 px-3 py-1"
               >
                 Article
-              </Link>
-              <Link
-                to="http://wa.me/+6281934760910"
-                className="hover:bg-zinc-50 hover:text-green-700 dark:hover:text-white hover:transition-all hover:ease-in-out dark:hover:bg-green-800 px-3 py-1"
-              >
-                Contact
               </Link>
             </div>
             <div className="hover:cursor-pointer">
@@ -149,7 +176,7 @@ const Navbar = ({ theme, setTheme }) => {
       <Link to="http://wa.me/+6281934760910" target="_blank" rel="noreferrer">
         <WhatsappLogo
           size={56}
-          className="fixed bottom-5 right-5 animate-bounce text-green-400 hover:animate-none hover:cursor-pointer"
+          className="fixed bottom-5 right-5 animate-bounce text-green-700 hover:animate-none hover:cursor-pointer"
         />
       </Link>
     </>

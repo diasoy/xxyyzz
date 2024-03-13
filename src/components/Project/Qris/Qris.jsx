@@ -20,6 +20,7 @@ const Qris = () => {
     } else {
       document.documentElement.classList.remove("dark");
     }
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
   return (
     <>

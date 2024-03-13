@@ -6,7 +6,7 @@ import shopKuy from "../../assets/Web/ShopKuy.png";
 const ProjectHeader = () => {
   return (
     <>
-      <div className="w-full mt-32">
+      <div id="project" className="w-full mt-32">
         <div className="flex justify-center font-bold text-xl">
           <h1 className="text-2xl md:text-3xl font-bold text-center">
             My Project & Experience
@@ -23,7 +23,7 @@ const ProjectHeader = () => {
                   to={"/project-experience/kiddy-learn-adventures"}
                   className=""
                 >
-                  <div className="border-[3px] rounded-xl hover:border-[4px] hover:border-green-700 dark:hover:border-[4px] dark:hover:border-white bg-green-700 text-white transition-all duration-500">
+                  <div className="shadow-green-700 max-w-96 shadow rounded-xl hover:border-[4px] hover:border-green-700 dark:hover:border-[4px] dark:hover:border-white bg-green-700 text-white transition-all duration-300">
                     <img
                       src={kiddyLearn}
                       alt="kiddylearn"
@@ -42,7 +42,7 @@ const ProjectHeader = () => {
               </li>
               <li>
                 <Link to={"/project-experience/qris"} className="">
-                  <div className="border-[3px] rounded-xl hover:border-[4px] hover:border-green-700 dark:hover:border-[4px] dark:hover:border-white bg-green-700 text-white transition-all duration-500">
+                  <div className="shadow-green-700 max-w-96 shadow rounded-xl hover:border-[4px] hover:border-green-700 dark:hover:border-[4px] dark:hover:border-white bg-green-700 text-white transition-all duration-300">
                     <img
                       src={qris}
                       alt="qris"
@@ -74,7 +74,7 @@ const ProjectHeader = () => {
                   target="_blank"
                   className=""
                 >
-                  <div className="border-[3px] rounded-xl hover:border-[4px] hover:border-green-700 dark:hover:border-[4px] dark:hover:border-white bg-green-700 text-white transition-all duration-500">
+                  <div className="shadow-green-700 max-w-96 shadow rounded-xl hover:border-[4px] hover:border-green-700 dark:hover:border-[4px] dark:hover:border-white bg-green-700 text-white transition-all duration-300">
                     <img
                       src={shopKuy}
                       alt="shopKuy"

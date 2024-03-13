@@ -27,6 +27,7 @@ const About = () => {
     } else {
       document.documentElement.classList.remove("dark");
     }
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
   return (
@@ -37,18 +38,16 @@ const About = () => {
             About Me
           </h1>
           <p className="text-justify">
-            Saya merupakan seorang mahasiswa jurusan Sistem Informasi di salah
-            satu universitas di Surabaya yaitu UPN Veteran Jawa Timur. Saya
-            merupakan mahasiswa prodi Sistem Informasi dan saat ini berada pada
-            semester 4. Saya merupakan seseorang yang memiliki ketertarikan pada
-            bidang Teknologi Informasi. Saya memiliki kemampuan dalam membuat
-            desain UI/UX menggunakan alat desain Figma. Saya juga memiliki
-            kemampuan dalam membuat halaman web yang fungsional menggunakan
-            HTML, TailwindCSS, dan JavaScript. Saya juga memiliki kemampuan
-            dalam menggunakan kerangka kerja front-end React.js untuk
-            mempercepat pengembangan dan meningkatkan skalabilitas. Saya juga
-            memiliki kemampuan untuk memastikan keterjangkauan (accessibility)
-            dan responsivitas pada berbagai perangkat dan browser.
+            I am a student majoring in Information Systems at a university in
+            Surabaya, namely University Pembangunan Nasional &quot;Veteran&quot;
+            East Java. I am someone who has an interest in the field of
+            Information Technology. I have the ability to create UI/UX designs
+            using the Figma design tool. I also have the ability to create
+            functional web pages using HTML, TailwindCSS, and JavaScript. I also
+            have the ability to use the React.js front-end framework to speed up
+            development and increase scalability. I also have the ability to
+            ensure affordability (accessibility) and responsibility on various
+            devices and browsers.
           </p>
           <h1 className="mt-10 text-lg mb-4 font-bold">
             Activities during my college years
@@ -88,7 +87,7 @@ const About = () => {
                 <h1 className="text-sm">
                   Eksplorasi Diri Sistem Informasi (EDISI)
                 </h1>
-                <img src={edisi} alt="edisi" className="rounded-lg shadow-lg"/>
+                <img src={edisi} alt="edisi" className="rounded-lg shadow-lg" />
               </li>
               <li className="list-disc">
                 <h1 className="text-sm">
