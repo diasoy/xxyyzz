@@ -128,7 +128,7 @@ const Navbar = ({ theme, setTheme }) => {
                   smooth={true}
                   offset={-70}
                   duration={1000}
-                  className="hover:cursor-pointer font-semibold text-white text-xl hover:text-green-600"
+                  className="hover:cursor-pointer font-semibold text-white text-xl lg:text-2xl hover:text-green-600"
                 >
                   diasnorman.
                 </ScrollLink>

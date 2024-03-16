@@ -7,7 +7,7 @@ import {
   InstagramLogo,
   LinkedinLogo,
   GithubLogo,
-  DownloadSimple,
+  ReadCvLogo,
 } from "@phosphor-icons/react";
 import { Link } from "react-router-dom";
 
@@ -72,11 +72,10 @@ const Profile = () => {
             </div>
             <div className="flex gap-2 mt-10 justify-center lg:justify-start">
               <Link
-                to=""
+                to="/curriculum"
                 className="text-white flex items-center justify-center gap-4 bg-green-800 px-10 py-2 rounded-md font-semibold hover:bg-green-950"
-              >
-                <DownloadSimple size={24} />
-                Download CV
+              ><ReadCvLogo size={24} />
+                Curriculum Vitae
               </Link>
             </div>
           </div>

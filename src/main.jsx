@@ -8,6 +8,7 @@ import About from "./components/About/About.jsx";
 import KiddyLearn from "./components/Project/kiddyLearn/KiddyLearn.jsx";
 import Qris from "./components/Project/Qris/Qris.jsx";
 import ArticleHeader from "./components/Article/ArticleHeader.jsx";
+import Curriculum from "./components/utils/Curriculum.jsx";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
   {
     path: "/project-experience/qris",
     element: <Qris />,
+  },
+  {
+    path: "/curriculum",
+    element: <Curriculum />,
   },
 ]);
 
