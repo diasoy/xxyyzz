@@ -18,10 +18,10 @@ const Curriculum = () => {
 
   return (
     <>
-      <div className="flex justify-center flex-col bg-slate-200 py-8 px-4 md:px-24">
+      <div className="flex justify-center flex-col bg-slate-200 py-8 px-4 text-xs md:text-base md:px-24 lg:px-36 xl:text-xl xl:px-72">
         <div className="flex justify-center items-center flex-col">
-          <h1 className="font-bold">Dias Norman</h1>
-          <p className="text-xs text-center">
+          <h1 className="font-bold text-base md:text-lg lg:text-xl xl:text-2xl">Dias Norman</h1>
+          <p className=" text-center">
             Surabaya, Indonesia | diassnorrman@gmail.com |{" "}
             <a
               href="https://www.linkedin.com/in/diasnormann"
@@ -32,7 +32,7 @@ const Curriculum = () => {
           </p>
         </div>
         <div className="mt-5 text-center">
-          <p className="text-xs">
+          <p className="">
             Hello! you can call me <b>Dias</b>, I am an undergraduate student
             who interest with graphic design, web developer and uiux designer. I
             am a passionate person who loves to learn new things about
@@ -50,21 +50,21 @@ const Curriculum = () => {
           <h1 className="font-bold">Education</h1>
           <div className="w-full h-[1px] bg-black"></div>
           <div className="mt-2">
-            <div className="flex justify-between text-xs">
+            <div className="flex justify-between ">
               <div>
                 <h2 className="font-bold">SMAN 17 Surabaya</h2>
                 <p>Science Major</p>
               </div>
               <p>2019 - 2022</p>
             </div>
-            <div className="flex justify-between text-xsmt-4">
+            <div className="flex justify-between  mt-4">
               <div>
-                <h2 className="text-xs font-bold">
+                <h2 className=" font-bold">
                   UPN &quot;Veteran&quot; Jawa Timur
                 </h2>
-                <p className="text-xs">Information Systems</p>
+                <p className="">Information Systems</p>
               </div>
-              <p className="text-xs">2022 - Present</p>
+              <p className="">2022 - Present</p>
             </div>
           </div>
         </div>
@@ -77,28 +77,28 @@ const Curriculum = () => {
           <h1 className="font-bold">SKILLS</h1>
           <div className="w-full h-[1px] bg-black"></div>
           <div>
-            <div className="text-xs font-bold">
+            <div className=" font-bold">
               Skills Set:
               <span className="font-normal">
                 {" "}
                 Graphic Design, Web Developer, UI UX Designer
               </span>
             </div>
-            <div className="text-xs font-bold">
+            <div className=" font-bold">
               Software Skills:
               <span className="font-normal">
                 {" "}
                 Canva, Figma, Visual Studio Code
               </span>
             </div>
-            <div className="text-xs font-bold">
+            <div className=" font-bold">
               Soft Skills:
               <span className="font-normal">
                 {" "}
                 Problem Solving, Collaboration, Leadership
               </span>
             </div>
-            <div className="text-xs font-bold">
+            <div className=" font-bold">
               Languages:
               <span className="font-normal">
                 Bahasa Indonesia (Native), English (Basic)
