@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-/* eslint-disable react/no-unescaped-entities */
 const AboutHeader = () => {
   return (
     <>
@@ -69,7 +68,7 @@ const AboutHeader = () => {
           </ul>
           <Link
             to="/about"
-            className="text-green-700 hover:text-green-500 text-xl mt-10"
+            className="text-green-700 font-semibold hover:text-green-500 text-xl mt-10"
           >
             Lihat saya lebih jauh
           </Link>

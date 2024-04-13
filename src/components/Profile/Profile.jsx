@@ -1,6 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-// import instagram from "../../assets/images/ig.png";
-// import linkedin from "../../assets/images/linkedin.png";
 import profileGifLight from "../../assets/gifLight.gif";
 import profileGifDark from "../../assets/gifDark.gif";
 import {
@@ -46,7 +44,7 @@ const Profile = () => {
               >
                 <InstagramLogo
                   size={44}
-                  className="hover:animate-spin text-green-700"
+                  className="hover:animate-spin text-green-700 hover:shadow-2xl transition-all duration-300"
                 />
               </Link>
               <Link
@@ -56,7 +54,7 @@ const Profile = () => {
               >
                 <LinkedinLogo
                   size={44}
-                  className="hover:animate-spin text-green-700"
+                  className="hover:animate-spin text-green-700 hover:shadow-2xl transition-all duration-300"
                 />
               </Link>
               <Link
@@ -66,15 +64,16 @@ const Profile = () => {
               >
                 <GithubLogo
                   size={44}
-                  className="hover:animate-spin text-green-700"
+                  className="hover:animate-spin text-green-700 hover:shadow-2xl transition-all duration-300"
                 />
               </Link>
             </div>
             <div className="flex gap-2 mt-10 justify-center lg:justify-start">
               <Link
                 to="/curriculum"
-                className="text-white flex items-center justify-center gap-4 bg-green-800 px-10 py-2 rounded-md font-semibold hover:bg-green-950"
-              ><ReadCvLogo size={24} />
+                className="text-white flex items-center justify-center gap-4 bg-green-800 px-10 py-2 rounded-md font-semibold hover:bg-green-950 hover:shadow-2xl transition-all duration-300"
+              >
+                <ReadCvLogo size={24} />
                 Curriculum Vitae
               </Link>
             </div>

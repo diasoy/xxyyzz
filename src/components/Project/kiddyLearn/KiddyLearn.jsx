@@ -23,9 +23,12 @@ import matematika from "../../../assets/UIUX-KiddyLearn Adventures/Hitung.png";
 import setting1 from "../../../assets/UIUX-KiddyLearn Adventures/Settings.png";
 import setting2 from "../../../assets/UIUX-KiddyLearn Adventures/Settings-1.png";
 import DesignThinking from "./DesignThinking";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import Loading from "../../Loading/Loading";
 
 const KiddyLearn = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     const theme = localStorage.getItem("theme");
     if (theme === "dark") {
@@ -35,6 +38,19 @@ const KiddyLearn = () => {
     }
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return <Loading />;
+  }
+
   return (
     <>
       <div className="dark:bg-zinc-800 dark:text-white">

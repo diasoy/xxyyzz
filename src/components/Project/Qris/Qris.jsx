@@ -10,9 +10,12 @@ import merch from "../../../assets/UIUX-QRIS/QRIS Merch.png";
 import scan from "../../../assets/UIUX-QRIS/Scan Qris.png";
 import popupBerhasil1 from "../../../assets/UIUX-QRIS/Popup berhasil.png";
 import popupBerhasil2 from "../../../assets/UIUX-QRIS/Popup berhasil-1.png";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import Loading from "../../Loading/Loading";
 
 const Qris = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     const theme = localStorage.getItem("theme");
     if (theme === "dark") {
@@ -22,6 +25,19 @@ const Qris = () => {
     }
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return <Loading />;
+  }
+
   return (
     <>
       <div className=" dark:bg-zinc-800 dark:text-white">

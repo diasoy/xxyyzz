@@ -17,9 +17,20 @@ import jsDom from "../../assets/sertifikat/js dom.png";
 import jsAsync from "../../assets/sertifikat/jsasynchronous.png";
 import ajaxweb from "../../assets/sertifikat/ajaxwebapi.png";
 import expressejs from "../../assets/sertifikat/expressejs.png";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import Loading from "../Loading/Loading";
 
 const About = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000); 
+
+    return () => clearTimeout(timer);
+  }, []);
+
   useEffect(() => {
     const theme = localStorage.getItem("theme");
     if (theme === "dark") {
@@ -29,6 +40,10 @@ const About = () => {
     }
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
+
+  if (isLoading) {
+    return <Loading />;
+  }
 
   return (
     <>

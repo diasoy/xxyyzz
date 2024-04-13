@@ -1,7 +1,24 @@
+import { useEffect, useState } from "react";
+import Loading from "../Loading/Loading";
+
 const Curriculum = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000); // delay 2 detik
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return <Loading />;
+  }
+
   return (
     <>
-      <div className="flex justify-center flex-col bg-slate-200 py-8 px-2">
+      <div className="flex justify-center flex-col bg-slate-200 py-8 px-4 md:px-24">
         <div className="flex justify-center items-center flex-col">
           <h1 className="font-bold">Dias Norman</h1>
           <p className="text-xs text-center">
@@ -40,9 +57,9 @@ const Curriculum = () => {
               </div>
               <p>2019 - 2022</p>
             </div>
-            <div className="flex justify-between text-xs mt-4">
+            <div className="flex justify-between text-xsmt-4">
               <div>
-                <h2 className="text-xs  font-bold">
+                <h2 className="text-xs font-bold">
                   UPN &quot;Veteran&quot; Jawa Timur
                 </h2>
                 <p className="text-xs">Information Systems</p>

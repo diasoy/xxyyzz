@@ -2,8 +2,25 @@ import { Link } from "react-router-dom";
 import kiddyLearn from "../../assets/UIUX-KiddyLearn Adventures/logo.png";
 import qris from "../../assets/UIUX-QRIS/Logo.png";
 import shopKuy from "../../assets/Web/ShopKuy.png";
+import racingGame from "../../assets/Web/RacingGame.png";
+import { useEffect, useState } from "react";
+import Loading from "../Loading/Loading";
 
 const ProjectHeader = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return <Loading />;
+  }
+
   return (
     <>
       <div id="project" className="w-full mt-32">
@@ -86,6 +103,30 @@ const ProjectHeader = () => {
                       </h1>
                       <p className="text-center">
                         Landing Page Toko Online Platzi Fake Api Store
+                      </p>
+                    </div>
+                  </div>
+                </Link>
+              </li>
+              <li className="">
+                <Link
+                  to="https://racing-game-site6.vercel.app/"
+                  target="_blank"
+                  className=""
+                >
+                  <div className="shadow-green-700 max-w-96 shadow rounded-xl hover:border-[4px] hover:border-green-700 dark:hover:border-[4px] dark:hover:border-white bg-green-700 text-white transition-all duration-300">
+                    <img
+                      src={racingGame}
+                      alt="racingGame"
+                      className="w-full h-64 rounded-t-lg object-cover"
+                    />
+                    <div className="flex flex-col justify-center items-center py-6 px-3 mx-3 gap-4">
+                      <h1 className="font-semibold 2xl:text-lg text-center">
+                        Racing Game Javascript Canvas
+                      </h1>
+                      <p className="text-center">
+                        Game Mobil Sederhana Melewati Obstacle Menggunakan
+                        Javascript Canvas
                       </p>
                     </div>
                   </div>
