@@ -20,7 +20,9 @@ const Curriculum = () => {
     <>
       <div className="flex justify-center flex-col bg-slate-200 py-8 px-4 text-xs md:text-base md:px-24 lg:px-36 xl:text-xl xl:px-72">
         <div className="flex justify-center items-center flex-col">
-          <h1 className="font-bold text-base md:text-lg lg:text-xl xl:text-2xl">Dias Norman</h1>
+          <h1 className="font-bold text-base md:text-lg lg:text-xl xl:text-2xl">
+            Dias Norman
+          </h1>
           <p className=" text-center">
             Surabaya, Indonesia | diassnorrman@gmail.com |{" "}
             <a
@@ -69,9 +71,9 @@ const Curriculum = () => {
           </div>
         </div>
         <div className="mt-5">
-          <h1 className="font-bold">Expriences</h1>
+          <h1 className="font-bold">Projects</h1>
           <div className="w-full h-[1px] bg-black"></div>
-          <div></div>
+          <div>Coming Soon..</div>
         </div>
         <div className="mt-20">
           <h1 className="font-bold">SKILLS</h1>

@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Link as ScrollLink } from "react-scroll";
-import { Moon, SunDim, WhatsappLogo } from "@phosphor-icons/react";
+import { Moon, SunDim } from "@phosphor-icons/react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
@@ -122,16 +122,16 @@ const Navbar = ({ theme, setTheme }) => {
           {/* WEB MENU */}
           <div className="hidden md:flex justify-between items-center gap-4 w-full px-12 py-8 lg:px-32 xl:px-52 text-white">
             <div>
-            <ScrollLink
-                  to="profile"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={1000}
-                  className="hover:cursor-pointer font-semibold text-white text-xl lg:text-2xl hover:text-green-600"
-                >
-                  diasnorman.
-                </ScrollLink>
+              <ScrollLink
+                to="profile"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1000}
+                className="hover:cursor-pointer font-semibold text-white text-xl lg:text-2xl hover:text-green-600"
+              >
+                diasnorman.
+              </ScrollLink>
             </div>
 
             <div className="flex gap-1">
@@ -172,13 +172,6 @@ const Navbar = ({ theme, setTheme }) => {
           </div>
         </div>
       </div>
-
-      <Link to="http://wa.me/+6281934760910" target="_blank" rel="noreferrer">
-        <WhatsappLogo
-          size={56}
-          className="fixed bottom-5 right-5 animate-bounce text-green-700 hover:animate-none hover:cursor-pointer"
-        />
-      </Link>
     </>
   );
 };
