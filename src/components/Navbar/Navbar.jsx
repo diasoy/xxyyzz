@@ -28,7 +28,7 @@ const Navbar = ({ theme, setTheme }) => {
   };
   return (
     <>
-      <div className="fixed w-full top-0 left-0 right-0">
+      <div className="fixed top-0 left-0 right-0 w-full">
         <div className="bg-green-800 dark:bg-zinc-900">
           <div>
             <div className="flex items-center justify-between px-10 py-5 md:hidden">
@@ -39,7 +39,7 @@ const Navbar = ({ theme, setTheme }) => {
                   smooth={true}
                   offset={-70}
                   duration={1000}
-                  className="hover:cursor-pointer font-semibold text-white text-xl hover:text-green-600"
+                  className="text-xl font-semibold text-slate-50 hover:cursor-pointer hover:text-green-600"
                 >
                   diasnorman.
                 </ScrollLink>
@@ -47,7 +47,7 @@ const Navbar = ({ theme, setTheme }) => {
               <div>
                 <button className="focus:outline-none" onClick={toggleMenu}>
                   <svg
-                    className="w-6 h-6 text-white hover:text-green-600 "
+                    className="w-6 h-6 text-slate-50 hover:text-green-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -78,7 +78,7 @@ const Navbar = ({ theme, setTheme }) => {
             <div
               className={
                 isOpen
-                  ? "absolute left-0 right-0 flex flex-col bg-green-800 dark:bg-zinc-900 gap-4 justify-center items-center py-5 text-white md:hidden"
+                  ? "absolute left-0 right-0 flex flex-col bg-green-800 dark:bg-zinc-900 gap-4 justify-center items-center py-5 text-slate-50 md:hidden"
                   : "hidden"
               }
             >
@@ -88,7 +88,7 @@ const Navbar = ({ theme, setTheme }) => {
                 smooth={true}
                 offset={-100}
                 duration={1000}
-                className="hover:text-zinc-950 cursor-pointer dark:hover:text-green-600"
+                className="cursor-pointer hover:text-zinc-950 dark:hover:text-green-600"
               >
                 Activity
               </ScrollLink>
@@ -98,13 +98,13 @@ const Navbar = ({ theme, setTheme }) => {
                 smooth={true}
                 offset={-100}
                 duration={1000}
-                className="hover:text-zinc-950 cursor-pointer dark:hover:text-green-600"
+                className="cursor-pointer hover:text-zinc-950 dark:hover:text-green-600"
               >
                 Project
               </ScrollLink>
               <Link
                 to="/article"
-                className="hover:text-zinc-950 cursor-pointer dark:hover:text-green-600"
+                className="cursor-pointer hover:text-zinc-950 dark:hover:text-green-600"
               >
                 Article
               </Link>
@@ -120,7 +120,7 @@ const Navbar = ({ theme, setTheme }) => {
           </div>
 
           {/* WEB MENU */}
-          <div className="hidden md:flex justify-between items-center gap-4 w-full px-12 py-8 lg:px-32 xl:px-52 text-white">
+          <div className="items-center justify-between hidden w-full gap-4 px-12 py-8 text-slate-50 md:flex lg:px-32 xl:px-52">
             <div>
               <ScrollLink
                 to="profile"
@@ -128,7 +128,7 @@ const Navbar = ({ theme, setTheme }) => {
                 smooth={true}
                 offset={-70}
                 duration={1000}
-                className="hover:cursor-pointer font-semibold text-white text-xl lg:text-2xl hover:text-green-600"
+                className="text-xl font-semibold text-slate-50 hover:cursor-pointer lg:text-2xl hover:text-green-600"
               >
                 diasnorman.
               </ScrollLink>
@@ -141,7 +141,7 @@ const Navbar = ({ theme, setTheme }) => {
                 smooth={true}
                 offset={-100}
                 duration={1000}
-                className="hover:cursor-pointer hover:bg-zinc-50 hover:text-green-700 dark:hover:text-white hover:transition-all hover:ease-in-out dark:hover:bg-green-800 px-3 py-1"
+                className="px-3 py-1 hover:cursor-pointer hover:bg-zinc-50 hover:text-green-700 dark:hover:text-slate-50 hover:transition-all hover:ease-in-out dark:hover:bg-green-800"
               >
                 Activity
               </ScrollLink>
@@ -151,13 +151,13 @@ const Navbar = ({ theme, setTheme }) => {
                 smooth={true}
                 offset={-100}
                 duration={1000}
-                className="hover:cursor-pointer hover:bg-zinc-50 hover:text-green-700 dark:hover:text-white hover:transition-all hover:ease-in-out dark:hover:bg-green-800 px-3 py-1"
+                className="px-3 py-1 hover:cursor-pointer hover:bg-zinc-50 hover:text-green-700 dark:hover:text-slate-50 hover:transition-all hover:ease-in-out dark:hover:bg-green-800"
               >
                 Project
               </ScrollLink>
               <Link
                 to="/article"
-                className="hover:bg-zinc-50 hover:text-green-700 dark:hover:text-white hover:transition-all hover:ease-in-out dark:hover:bg-green-800 px-3 py-1"
+                className="px-3 py-1 hover:bg-zinc-50 hover:text-green-700 dark:hover:text-slate-50 hover:transition-all hover:ease-in-out dark:hover:bg-green-800"
               >
                 Article
               </Link>

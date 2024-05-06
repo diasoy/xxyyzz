@@ -41,10 +41,10 @@ const Qris = () => {
   return (
     <>
       <div className=" dark:bg-zinc-800 dark:text-white">
-        <div className="flex flex-col pt-12 mx-10 gap-4 md:mx-32 lg:mx-64 2xl:mx-96">
+        <div className="flex flex-col gap-4 pt-12 mx-10 md:mx-32 lg:mx-64 2xl:mx-96">
           <div className="flex flex-col gap-4 mb-8">
-            <h1 className="font-bold text-xl 2xl:text-2xl">QRIS</h1>
-            <p className="text-justify text-sm 2xl:text-base">
+            <h1 className="text-xl font-bold 2xl:text-2xl">QRIS</h1>
+            <p className="text-sm text-justify 2xl:text-base">
               QRIS merupakan aplikasi pembayaran dan penyimpanan uang digital
               yang memungkinkan pengguna untuk melakukan pembayaran dan
               menyimpan uang secara digital. Aplikasi ini juga memungkinkan
@@ -54,7 +54,7 @@ const Qris = () => {
               Aplikasi ini juga memungkinkan pengguna untuk melihat profil
               pengguna dan juga melihat QRIS Merch yang sedang dijual.
             </p>
-            <div className="flex flex-col justify-start items-start">
+            <div className="flex flex-col items-start justify-start">
               <h1>Role :</h1>
               <h1 className="font-bold">UI Designer, UX Researcher</h1>
             </div>
@@ -62,88 +62,88 @@ const Qris = () => {
 
           {/* Halaman Splash Screen */}
           <div className="mt-10">
-            <h1 className="text-left font-semibold 2xl:text-lg">
+            <h1 className="font-semibold text-left 2xl:text-lg">
               Splash Screen, Login & Register
             </h1>
-            <div className="grid mx-1 my-2 gap-2 grid-cols-3 items-center">
+            <div className="grid items-center grid-cols-3 gap-2 mx-1 my-2">
               <div>
                 <img src={splashScreen} alt="" className="" />
-                <p className="text-center text-sm mt-1 ">Splash Screen</p>
+                <p className="mt-1 text-sm text-center ">Splash Screen</p>
               </div>
               <div>
                 <img src={login} alt="" className="" />
-                <p className="text-center mx-auto text-sm mt-1 ">Login</p>
+                <p className="mx-auto mt-1 text-sm text-center ">Login</p>
               </div>
               <div>
                 <img src={registrasi} alt="" className="" />
-                <p className="text-center text-sm mt-1 ">Register</p>
+                <p className="mt-1 text-sm text-center ">Register</p>
               </div>
             </div>
           </div>
 
           {/* Halaman Beranda */}
           <div className="mt-10">
-            <h1 className="text-left font-semibold 2xl:text-lg">
+            <h1 className="font-semibold text-left 2xl:text-lg">
               Halaman Utama
             </h1>
-            <div className="grid mx-1 my-2 gap-2 grid-cols-3 items-center">
+            <div className="grid items-center grid-cols-3 gap-2 mx-1 my-2">
               <div>
                 <img src={beranda} alt="" className="" />
-                <p className="text-center text-sm mt-1 ">Halaman Utama</p>
+                <p className="mt-1 text-sm text-center ">Halaman Utama</p>
               </div>
               <div>
                 <img src={riwayatSelesai} alt="" className="" />
-                <p className="text-center mx-auto text-sm mt-1 ">
+                <p className="mx-auto mt-1 text-sm text-center ">
                   Riwayat Selesai
                 </p>
               </div>
               <div>
                 <img src={riwayatBerlangsung} alt="" className="" />
-                <p className="text-center text-sm mt-1 ">Berlangsung</p>
+                <p className="mt-1 text-sm text-center ">Berlangsung</p>
               </div>
             </div>
           </div>
 
           {/* Halaman Event */}
           <div className="mt-10">
-            <h1 className="text-left font-semibold 2xl:text-lg">
+            <h1 className="font-semibold text-left 2xl:text-lg">
               Halaman Event, Profile & Qris Merch
             </h1>
-            <div className="grid mx-1 my-2 gap-2 grid-cols-3 items-center">
+            <div className="grid items-center grid-cols-3 gap-2 mx-1 my-2">
               <div>
                 <img src={profile} alt="" className="" />
-                <p className="text-center text-sm mt-1 ">Profile</p>
+                <p className="mt-1 text-sm text-center ">Profile</p>
               </div>
               <div>
                 <img src={event} alt="" className="" />
-                <p className="text-center mx-auto text-sm mt-1 ">Event</p>
+                <p className="mx-auto mt-1 text-sm text-center ">Event</p>
               </div>
               <div>
                 <img src={merch} alt="" className="" />
-                <p className="text-center text-sm mt-1 ">Qris Merch</p>
+                <p className="mt-1 text-sm text-center ">Qris Merch</p>
               </div>
             </div>
           </div>
 
           {/* Halaman Pembayaran */}
           <div className="mt-10">
-            <h1 className="text-left font-semibold 2xl:text-lg">
+            <h1 className="font-semibold text-left 2xl:text-lg">
               Halaman Pembayaran
             </h1>
-            <div className="grid mx-1 my-2 gap-2 grid-cols-3 items-center">
+            <div className="grid items-center grid-cols-3 gap-2 mx-1 my-2">
               <div>
                 <img src={scan} alt="" className="" />
-                <p className="text-center text-sm mt-1 ">Scan Pembayaran</p>
+                <p className="mt-1 text-sm text-center ">Scan Pembayaran</p>
               </div>
               <div>
                 <img src={popupBerhasil1} alt="" className="" />
-                <p className="text-center mx-auto text-sm mt-1 ">
+                <p className="mx-auto mt-1 text-sm text-center ">
                   Popup Loading Pembayaran
                 </p>
               </div>
               <div>
                 <img src={popupBerhasil2} alt="" className="" />
-                <p className="text-center text-sm mt-1 ">Pembayaran Berhasil</p>
+                <p className="mt-1 text-sm text-center ">Pembayaran Berhasil</p>
               </div>
             </div>
           </div>

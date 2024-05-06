@@ -26,7 +26,7 @@ const About = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1000); 
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -49,7 +49,7 @@ const About = () => {
     <>
       <div className="bg-zinc-50 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-50">
         <div className="mx-10 lg:mx-24">
-          <h1 className="text-center p-6 font-bold text-xl lg:text-2xl">
+          <h1 className="p-6 text-xl font-bold text-center lg:text-2xl">
             About Me
           </h1>
           <p className="text-justify">
@@ -64,14 +64,14 @@ const About = () => {
             ensure affordability (accessibility) and responsibility on various
             devices and browsers.
           </p>
-          <h1 className="mt-10 text-lg mb-4 font-bold">
+          <h1 className="mt-10 mb-4 text-lg font-bold">
             Activities during my college years
           </h1>
           <div>
-            <h1 className="underline underline-offset-4 font-bold">
+            <h1 className="font-bold underline underline-offset-4">
               Volunteer
             </h1>
-            <ul className="flex flex-col mx-10 gap-2 md:grid md:grid-cols-2 lg:grid-cols-3">
+            <ul className="flex flex-col gap-2 mx-10 md:grid md:grid-cols-2 lg:grid-cols-3">
               <li className="list-disc">
                 <h1 className="text-sm">FANTASTIS</h1>
                 <img
@@ -114,8 +114,8 @@ const About = () => {
           </div>
 
           <div className="mt-12">
-            <h1 className="underline underline-offset-4 font-bold">Course</h1>
-            <ul className="flex mt-4 flex-col gap-10 md:grid md:grid-cols-2 lg:grid-cols-3">
+            <h1 className="font-bold underline underline-offset-4">Course</h1>
+            <ul className="flex flex-col gap-10 mt-4 md:grid md:grid-cols-2 lg:grid-cols-3">
               <li className="">
                 <img
                   src={dasarProyek}

@@ -2,7 +2,7 @@ const ArticleHeader = () => {
   return (
     <>
       <div>
-        <h1 className="h-screen w-screen dark:bg-zinc-800 dark:text-white flex justify-center items-center font-bold text-3xl">
+        <h1 className="flex items-center justify-center w-screen h-screen text-3xl font-bold dark:bg-zinc-800 dark:text-white">
           Coming Soon
         </h1>
       </div>

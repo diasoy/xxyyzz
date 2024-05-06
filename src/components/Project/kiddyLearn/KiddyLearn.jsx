@@ -54,12 +54,12 @@ const KiddyLearn = () => {
   return (
     <>
       <div className="dark:bg-zinc-800 dark:text-white">
-        <div className="flex flex-col pt-12 mx-10 gap-4 md:mx-32 lg:mx-64 2xl:mx-96">
+        <div className="flex flex-col gap-4 pt-12 mx-10 md:mx-32 lg:mx-64 2xl:mx-96">
           <div className="flex flex-col gap-4 mb-8">
-            <h1 className="font-bold text-xl 2xl:text-2xl">
+            <h1 className="text-xl font-bold 2xl:text-2xl">
               KiddyLearn Adventures
             </h1>
-            <p className="text-justify text-sm 2xl:text-base">
+            <p className="text-sm text-justify 2xl:text-base">
               “KiddyLearn Adventures” adalah sebuah aplikasi pembelajaran yang
               dihadirkan dengan konsep user interface yang menarik dan
               interaktif, dirancang khusus untuk anak-anak. “KiddyLearn
@@ -71,7 +71,7 @@ const KiddyLearn = () => {
               menyenangkan bagi anak-anak, sehingga mereka lebih termotivasi
               untuk belajar.
             </p>
-            <div className="flex flex-col justify-start items-start">
+            <div className="flex flex-col items-start justify-start">
               <h1>Role :</h1>
               <h1 className="font-bold">UI Designer, UX Researcher</h1>
             </div>
@@ -80,137 +80,137 @@ const KiddyLearn = () => {
 
           {/* Splash Screen */}
           <div className="mt-10">
-            <h1 className="text-left font-semibold 2xl:text-lg">
+            <h1 className="font-semibold text-left 2xl:text-lg">
               Halaman Splash Screen
             </h1>
-            <div className="grid mx-1 my-2 gap-2 grid-cols-2">
+            <div className="grid grid-cols-2 gap-2 mx-1 my-2">
               <div>
                 <img src={splashScreen1} alt="" />
-                <p className="text-center text-sm mt-1 ">Splash Screen - 1</p>
+                <p className="mt-1 text-sm text-center ">Splash Screen - 1</p>
               </div>
               <div>
                 <img src={splashScreen2} alt="" />
-                <p className="text-center text-sm mt-1">Splash Screen - 2</p>
+                <p className="mt-1 text-sm text-center">Splash Screen - 2</p>
               </div>
               <div>
                 <img src={splashScreen3} alt="" />
-                <p className="text-center text-sm mt-1">Splash Screen - 3</p>
+                <p className="mt-1 text-sm text-center">Splash Screen - 3</p>
               </div>
               <div>
                 <img src={splashScreen4} alt="" />
-                <p className="text-center text-sm mt-1">Splash Screen - 4</p>
+                <p className="mt-1 text-sm text-center">Splash Screen - 4</p>
               </div>
             </div>
           </div>
 
           {/* Registrasi */}
           <div>
-            <h1 className="text-left font-semibold 2xl:text-lg">
+            <h1 className="font-semibold text-left 2xl:text-lg">
               Halaman Registrasi
             </h1>
-            <div className="grid mx-1 my-4 gap-2 grid-cols-2">
+            <div className="grid grid-cols-2 gap-2 mx-1 my-4">
               <div>
                 <img src={login} alt="" />
-                <p className="text-center text-sm mt-1">Login</p>
+                <p className="mt-1 text-sm text-center">Login</p>
               </div>
               <div>
                 <img src={registrasi1} alt="" />
-                <p className="text-center text-sm mt-1">Pilih Birthday</p>
+                <p className="mt-1 text-sm text-center">Pilih Birthday</p>
               </div>
               <div>
                 <img src={registrasi2} alt="" />
-                <p className="text-center text-sm mt-1">Pilih Bahasa</p>
+                <p className="mt-1 text-sm text-center">Pilih Bahasa</p>
               </div>
               <div>
                 <img src={registrasi3} alt="" />
-                <p className="text-center text-sm mt-1">Pilih Avatar</p>
+                <p className="mt-1 text-sm text-center">Pilih Avatar</p>
               </div>
             </div>
           </div>
 
           {/* Beranda */}
           <div>
-            <h1 className="text-left font-semibold 2xl:text-lg">
+            <h1 className="font-semibold text-left 2xl:text-lg">
               Halaman Utama
             </h1>
-            <div className="grid mx-1 my-4 gap-2 grid-cols-2">
+            <div className="grid grid-cols-2 gap-2 mx-1 my-4">
               <div>
                 <img src={beranda} alt="" />
-                <p className="text-center text-sm mt-1">Halaman Utama</p>
+                <p className="mt-1 text-sm text-center">Halaman Utama</p>
               </div>
               <div>
                 <img src={leaderboard} alt="" />
-                <p className="text-center text-sm mt-1">Leaderboard</p>
+                <p className="mt-1 text-sm text-center">Leaderboard</p>
               </div>
               <div>
                 <img src={papanPerkembangan} alt="" />
-                <p className="text-center text-sm mt-1">Papan Perkembangan</p>
+                <p className="mt-1 text-sm text-center">Papan Perkembangan</p>
               </div>
               <div>
                 <img src={shop} alt="" />
-                <p className="text-center text-sm mt-1">Toko</p>
+                <p className="mt-1 text-sm text-center">Toko</p>
               </div>
             </div>
           </div>
 
           {/* Permainan */}
           <div>
-            <h1 className="text-left font-semibold 2xl:text-lg">Permainan</h1>
-            <div className="grid mx-1 my-4 gap-2 grid-cols-2">
+            <h1 className="font-semibold text-left 2xl:text-lg">Permainan</h1>
+            <div className="grid grid-cols-2 gap-2 mx-1 my-4">
               <div>
                 <img src={tebakGambar1} alt="" />
-                <p className="text-center text-sm mt-1">Tebak Gambar - 1</p>
+                <p className="mt-1 text-sm text-center">Tebak Gambar - 1</p>
               </div>
               <div>
                 <img src={tebakGambar2} alt="" />
-                <p className="text-center text-sm mt-1">Tebak Gambar - 2</p>
+                <p className="mt-1 text-sm text-center">Tebak Gambar - 2</p>
               </div>
               <div>
                 <img src={tebakGambar3} alt="" />
-                <p className="text-center text-sm mt-1">Tebak Gambar - 3</p>
+                <p className="mt-1 text-sm text-center">Tebak Gambar - 3</p>
               </div>
               <div>
                 <img src={puzzle} alt="" />
-                <p className="text-center text-sm mt-1">Puzzle</p>
+                <p className="mt-1 text-sm text-center">Puzzle</p>
               </div>
               <div>
                 <img src={memoriMatching} alt="" />
-                <p className="text-center text-sm mt-1">Memori Matching</p>
+                <p className="mt-1 text-sm text-center">Memori Matching</p>
               </div>
               <div>
                 <img src={labirinPendidikan} alt="" />
-                <p className="text-center text-sm mt-1">Labirin Pendidikan</p>
+                <p className="mt-1 text-sm text-center">Labirin Pendidikan</p>
               </div>
               <div>
                 <img src={tebakKata} alt="" />
-                <p className="text-center text-sm mt-1">Tebak Kata</p>
+                <p className="mt-1 text-sm text-center">Tebak Kata</p>
               </div>
               <div>
                 <img src={mencariPerbedaan} alt="" />
-                <p className="text-center text-sm mt-1">Mencari Perbedaan</p>
+                <p className="mt-1 text-sm text-center">Mencari Perbedaan</p>
               </div>
               <div>
                 <img src={cerdasCermat} alt="" />
-                <p className="text-center text-sm mt-1">Cerdas Cermat</p>
+                <p className="mt-1 text-sm text-center">Cerdas Cermat</p>
               </div>
               <div>
                 <img src={matematika} alt="" />
-                <p className="text-center text-sm mt-1">Hitung</p>
+                <p className="mt-1 text-sm text-center">Hitung</p>
               </div>
             </div>
           </div>
 
           {/* Settings */}
           <div>
-            <h1 className="text-left font-semibold">Pengaturan</h1>
-            <div className="grid mx-1 my-4 gap-2 grid-cols-2">
+            <h1 className="font-semibold text-left">Pengaturan</h1>
+            <div className="grid grid-cols-2 gap-2 mx-1 my-4">
               <div>
                 <img src={setting1} alt="" />
-                <p className="text-center text-sm mt-1">Pengaturan</p>
+                <p className="mt-1 text-sm text-center">Pengaturan</p>
               </div>
               <div>
                 <img src={setting2} alt="" />
-                <p className="text-center text-sm mt-1">Pengaturan</p>
+                <p className="mt-1 text-sm text-center">Pengaturan</p>
               </div>
             </div>
           </div>

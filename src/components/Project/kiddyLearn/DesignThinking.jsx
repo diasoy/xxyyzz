@@ -4,10 +4,10 @@ const DesignThinking = () => {
   return (
     <>
       <div>
-        <h1 className="font-semibold text-lg 2xl:text-xl">
+        <h1 className="text-lg font-semibold 2xl:text-xl">
           Design Thinking Process
         </h1>
-        <div className="flex flex-col gap-2 items-center">
+        <div className="flex flex-col items-center gap-2">
           <img
             src={designThinkingImage}
             alt="designThinkingImage"

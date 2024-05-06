@@ -18,12 +18,12 @@ const Curriculum = () => {
 
   return (
     <>
-      <div className="flex justify-center flex-col bg-slate-200 py-8 px-4 text-xs md:text-base md:px-24 lg:px-36 xl:text-xl xl:px-72">
-        <div className="flex justify-center items-center flex-col">
-          <h1 className="font-bold text-base md:text-lg lg:text-xl xl:text-2xl">
+      <div className="flex flex-col justify-center px-4 py-8 text-xs bg-slate-200 md:text-base md:px-24 lg:px-36 xl:text-xl xl:px-72">
+        <div className="flex flex-col items-center justify-center">
+          <h1 className="text-base font-bold md:text-lg lg:text-xl xl:text-2xl">
             Dias Norman
           </h1>
-          <p className=" text-center">
+          <p className="text-center ">
             Surabaya, Indonesia | diassnorrman@gmail.com |{" "}
             <a
               href="https://www.linkedin.com/in/diasnormann"
@@ -59,9 +59,9 @@ const Curriculum = () => {
               </div>
               <p>2019 - 2022</p>
             </div>
-            <div className="flex justify-between  mt-4">
+            <div className="flex justify-between mt-4">
               <div>
-                <h2 className=" font-bold">
+                <h2 className="font-bold ">
                   UPN &quot;Veteran&quot; Jawa Timur
                 </h2>
                 <p className="">Information Systems</p>
@@ -79,28 +79,28 @@ const Curriculum = () => {
           <h1 className="font-bold">SKILLS</h1>
           <div className="w-full h-[1px] bg-black"></div>
           <div>
-            <div className=" font-bold">
+            <div className="font-bold ">
               Skills Set:
               <span className="font-normal">
                 {" "}
                 Graphic Design, Web Developer, UI UX Designer
               </span>
             </div>
-            <div className=" font-bold">
+            <div className="font-bold ">
               Software Skills:
               <span className="font-normal">
                 {" "}
                 Canva, Figma, Visual Studio Code
               </span>
             </div>
-            <div className=" font-bold">
+            <div className="font-bold ">
               Soft Skills:
               <span className="font-normal">
                 {" "}
                 Problem Solving, Collaboration, Leadership
               </span>
             </div>
-            <div className=" font-bold">
+            <div className="font-bold ">
               Languages:
               <span className="font-normal">
                 Bahasa Indonesia (Native), English (Basic)

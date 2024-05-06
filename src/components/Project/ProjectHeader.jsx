@@ -3,6 +3,8 @@ import kiddyLearn from "../../assets/UIUX-KiddyLearn Adventures/logo.png";
 import qris from "../../assets/UIUX-QRIS/Logo.png";
 import shopKuy from "../../assets/Web/ShopKuy.png";
 import racingGame from "../../assets/Web/RacingGame.png";
+import shoppingList from "../../assets/Web/shoppinglist.png";
+import bookshelf from "../../assets/Web/bookshelf.png";
 import { useEffect, useState } from "react";
 import Loading from "../Loading/Loading";
 
@@ -24,14 +26,14 @@ const ProjectHeader = () => {
   return (
     <>
       <div id="project" className="w-full mt-32">
-        <div className="flex justify-center font-bold text-xl">
-          <h1 className="text-2xl md:text-3xl font-bold text-center">
+        <div className="flex justify-center text-xl font-bold">
+          <h1 className="text-2xl font-bold text-center md:text-3xl">
             My Project & Experience
           </h1>
         </div>
-        <div className="flex flex-col justify-center items-center mx-12 md:mx-24 xl:mx-32 mt-8">
+        <div className="flex flex-col items-center justify-center mx-12 mt-8 md:mx-24 xl:mx-32">
           <div className="flex flex-col mx-2 md:mx-4 lg:mx-6 xl:mx-10 2xl:mx-20">
-            <h1 className="font-semibold text-lg mb-4 underline underline-offset-8">
+            <h1 className="mb-4 text-lg font-semibold underline underline-offset-8">
               UI - UX Project
             </h1>
             <ul className="grid gap-6 md:grid-cols-2 xl:grid-cols-3 lg:items-center 2xl:grid-cols-4">
@@ -40,14 +42,14 @@ const ProjectHeader = () => {
                   to={"/project-experience/kiddy-learn-adventures"}
                   className=""
                 >
-                  <div className="shadow-green-700 max-w-96 shadow rounded-xl hover:border-[4px] hover:border-green-700 dark:hover:border-[4px] dark:hover:border-white bg-green-700 text-white transition-all duration-300">
+                  <div className="transition-all duration-500 ease-in-out hover:shadow-2xl max-w-96 shadow rounded-xl bg-green-700 text-white">
                     <img
                       src={kiddyLearn}
                       alt="kiddylearn"
-                      className="w-full h-64 rounded-t-lg object-cover"
+                      className="object-cover w-full h-64 rounded-t-lg"
                     />
-                    <div className="flex flex-col justify-center items-center py-6 px-3 mx-3 gap-4">
-                      <h1 className="font-semibold 2xl:text-lg text-center">
+                    <div className="flex flex-col items-center justify-center gap-4 px-3 py-6 mx-3">
+                      <h1 className="font-semibold text-center 2xl:text-lg">
                         KiddyLearn
                       </h1>
                       <p className="text-center">
@@ -59,14 +61,14 @@ const ProjectHeader = () => {
               </li>
               <li>
                 <Link to={"/project-experience/qris"} className="">
-                  <div className="shadow-green-700 max-w-96 shadow rounded-xl hover:border-[4px] hover:border-green-700 dark:hover:border-[4px] dark:hover:border-white bg-green-700 text-white transition-all duration-300">
+                  <div className="transition-all duration-500 ease-in-out hover:shadow-2xl max-w-96 shadow rounded-xl bg-green-700 text-white">
                     <img
                       src={qris}
                       alt="qris"
-                      className="w-full h-64 rounded-t-lg object-cover"
+                      className="object-cover w-full h-64 rounded-t-lg"
                     />
-                    <div className="flex flex-col justify-center items-center py-6 px-3 mx-3 gap-4">
-                      <h1 className="font-semibold 2xl:text-lg text-center">
+                    <div className="flex flex-col items-center justify-center gap-4 px-3 py-6 mx-3">
+                      <h1 className="font-semibold text-center 2xl:text-lg">
                         Qris
                       </h1>
                       <p className="text-center">
@@ -79,9 +81,9 @@ const ProjectHeader = () => {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center mx-12 md:mx-24 xl:mx-32 mt-8">
+        <div className="flex flex-col items-center justify-center mx-12 mt-8 md:mx-24 xl:mx-32">
           <div className="flex flex-col mx-2 md:mx-4 lg:mx-6 xl:mx-10 2xl:mx-20">
-            <h1 className="font-semibold text-lg mb-4 underline underline-offset-8">
+            <h1 className="mb-4 text-lg font-semibold underline underline-offset-8">
               Front End
             </h1>
             <ul className="grid gap-6 md:grid-cols-2 xl:grid-cols-3 lg:items-center 2xl:grid-cols-4">
@@ -91,14 +93,14 @@ const ProjectHeader = () => {
                   target="_blank"
                   className=""
                 >
-                  <div className="shadow-green-700 max-w-96 shadow rounded-xl hover:border-[4px] hover:border-green-700 dark:hover:border-[4px] dark:hover:border-white bg-green-700 text-white transition-all duration-300">
+                  <div className="transition-all duration-500 ease-in-out hover:shadow-2xl max-w-96 shadow rounded-xl bg-green-700 text-white">
                     <img
                       src={shopKuy}
                       alt="shopKuy"
-                      className="w-full h-64 rounded-t-lg object-cover"
+                      className="object-cover w-full h-64 rounded-t-lg"
                     />
-                    <div className="flex flex-col justify-center items-center py-6 px-3 mx-3 gap-4">
-                      <h1 className="font-semibold 2xl:text-lg text-center">
+                    <div className="flex flex-col items-center justify-center gap-4 px-3 py-6 mx-3">
+                      <h1 className="font-semibold text-center 2xl:text-lg">
                         ShopKuy
                       </h1>
                       <p className="text-center">
@@ -114,19 +116,64 @@ const ProjectHeader = () => {
                   target="_blank"
                   className=""
                 >
-                  <div className="shadow-green-700 max-w-96 shadow rounded-xl hover:border-[4px] hover:border-green-700 dark:hover:border-[4px] dark:hover:border-white bg-green-700 text-white transition-all duration-300">
+                  <div className="transition-all duration-500 ease-in-out hover:shadow-2xl max-w-96 shadow rounded-xl bg-green-700 text-white">
                     <img
                       src={racingGame}
                       alt="racingGame"
-                      className="w-full h-64 rounded-t-lg object-cover"
+                      className="object-cover w-full h-64 rounded-t-lg"
                     />
-                    <div className="flex flex-col justify-center items-center py-6 px-3 mx-3 gap-4">
-                      <h1 className="font-semibold 2xl:text-lg text-center">
-                        Racing Game Javascript Canvas
+                    <div className="flex flex-col items-center justify-center gap-4 px-3 py-6 mx-3">
+                      <h1 className="font-semibold text-center 2xl:text-lg">
+                        Racing Game
                       </h1>
                       <p className="text-center">
-                        Game Mobil Sederhana Melewati Obstacle Menggunakan
-                        Javascript Canvas
+                        Game Mobil Sederhana Melewati Obstacle
+                      </p>
+                    </div>
+                  </div>
+                </Link>
+              </li>
+              <li className="">
+                <Link
+                  to="https://wegodev-counter-starter.vercel.app/"
+                  target="_blank"
+                  className=""
+                >
+                  <div className="transition-all duration-500 ease-in-out hover:shadow-2xl max-w-96 shadow rounded-xl bg-green-700 text-white">
+                    <img
+                      src={shoppingList}
+                      alt="shoppingList"
+                      className="object-cover w-full h-64 rounded-t-lg"
+                    />
+                    <div className="flex flex-col items-center justify-center gap-4 px-3 py-6 mx-3">
+                      <h1 className="font-semibold text-center 2xl:text-lg">
+                        Counter Starter
+                      </h1>
+                      <p className="text-center">
+                        Pencatatan list yang digunakan untuk belanja
+                      </p>
+                    </div>
+                  </div>
+                </Link>
+              </li>
+              <li className="">
+                <Link
+                  to="https://racing-game-site6.vercel.app/"
+                  target="_blank"
+                  className=""
+                >
+                  <div className="transition-all duration-500 ease-in-out hover:shadow-2xl max-w-96 shadow rounded-xl bg-green-700 text-white">
+                    <img
+                      src={bookshelf}
+                      alt="bookshelf"
+                      className="object-cover w-full h-64 rounded-t-lg"
+                    />
+                    <div className="flex flex-col items-center justify-center gap-4 px-3 py-6 mx-3">
+                      <h1 className="font-semibold text-center 2xl:text-lg">
+                        Bookshelf App
+                      </h1>
+                      <p className="text-center">
+                        Mencatat buku yang sudah dibaca dan belum dibaca
                       </p>
                     </div>
                   </div>
