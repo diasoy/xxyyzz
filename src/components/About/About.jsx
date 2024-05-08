@@ -73,7 +73,7 @@ const About = () => {
             </h1>
             <ul className="flex flex-col gap-2 mx-10 md:grid md:grid-cols-2 lg:grid-cols-3">
               <li className="list-disc">
-                <h1 className="text-sm">FANTASTIS</h1>
+                <h1 className="text-sm md:text-base xl:text-lg">FANTASTIS</h1>
                 <img
                   src={fantastis}
                   alt="fantastis"
@@ -81,7 +81,7 @@ const About = () => {
                 />
               </li>
               <li className="list-disc">
-                <h1 className="text-sm">Smantass Campus Expo 2023</h1>
+                <h1 className="text-sm md:text-base xl:text-lg">Smantass Campus Expo 2023</h1>
                 <img
                   src={campex}
                   alt="campex"
@@ -89,7 +89,7 @@ const About = () => {
                 />
               </li>
               <li className="list-disc">
-                <h1 className="text-sm">
+                <h1 className="text-sm md:text-base xl:text-lg">
                   Studi Mengenal Sistem Informasi (DIMENSI)
                 </h1>
                 <img
@@ -99,13 +99,13 @@ const About = () => {
                 />
               </li>
               <li className="list-disc">
-                <h1 className="text-sm">
+                <h1 className="text-sm md:text-base xl:text-lg">
                   Eksplorasi Diri Sistem Informasi (EDISI)
                 </h1>
                 <img src={edisi} alt="edisi" className="rounded-lg shadow-lg" />
               </li>
               <li className="list-disc">
-                <h1 className="text-sm">
+                <h1 className="text-sm md:text-base xl:text-lg">
                   Puncak Pengaderan Sistem Informasi (PENSI)
                 </h1>
                 <img src={pensi} alt="pensi" className="rounded-lg shadow-lg" />

@@ -90,7 +90,7 @@ const Navbar = ({ theme, setTheme }) => {
                 duration={1000}
                 className="cursor-pointer hover:text-zinc-950 dark:hover:text-green-600"
               >
-                Activity
+                Do
               </ScrollLink>
               <ScrollLink
                 to="project"
@@ -103,10 +103,10 @@ const Navbar = ({ theme, setTheme }) => {
                 Project
               </ScrollLink>
               <Link
-                to="/article"
+                to="/about"
                 className="cursor-pointer hover:text-zinc-950 dark:hover:text-green-600"
               >
-                Article
+                About
               </Link>
 
               <div className="hover:cursor-pointer">
@@ -143,7 +143,7 @@ const Navbar = ({ theme, setTheme }) => {
                 duration={1000}
                 className="px-3 py-1 hover:cursor-pointer hover:bg-zinc-50 hover:text-green-700 dark:hover:text-slate-50 hover:transition-all hover:ease-in-out dark:hover:bg-green-800"
               >
-                Activity
+                Do
               </ScrollLink>
               <ScrollLink
                 to="project"
@@ -156,10 +156,10 @@ const Navbar = ({ theme, setTheme }) => {
                 Project
               </ScrollLink>
               <Link
-                to="/article"
+                to="/about"
                 className="px-3 py-1 hover:bg-zinc-50 hover:text-green-700 dark:hover:text-slate-50 hover:transition-all hover:ease-in-out dark:hover:bg-green-800"
               >
-                Article
+                About
               </Link>
             </div>
             <div className="hover:cursor-pointer">

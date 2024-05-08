@@ -42,7 +42,7 @@ const ProjectHeader = () => {
                   to={"/project-experience/kiddy-learn-adventures"}
                   className=""
                 >
-                  <div className="transition-all duration-500 ease-in-out hover:shadow-2xl max-w-96 shadow rounded-xl bg-green-700 text-white">
+                  <div className="transition-all duration-500 border ease-in-out hover:shadow-2xl max-w-96 shadow rounded-xl bg-green-700 text-white">
                     <img
                       src={kiddyLearn}
                       alt="kiddylearn"
@@ -61,7 +61,7 @@ const ProjectHeader = () => {
               </li>
               <li>
                 <Link to={"/project-experience/qris"} className="">
-                  <div className="transition-all duration-500 ease-in-out hover:shadow-2xl max-w-96 shadow rounded-xl bg-green-700 text-white">
+                  <div className="transition-all duration-500 border ease-in-out hover:shadow-2xl max-w-96 shadow rounded-xl bg-green-700 text-white">
                     <img
                       src={qris}
                       alt="qris"
@@ -84,7 +84,7 @@ const ProjectHeader = () => {
         <div className="flex flex-col items-center justify-center mx-12 mt-8 md:mx-24 xl:mx-32">
           <div className="flex flex-col mx-2 md:mx-4 lg:mx-6 xl:mx-10 2xl:mx-20">
             <h1 className="mb-4 text-lg font-semibold underline underline-offset-8">
-              Front End
+              Web
             </h1>
             <ul className="grid gap-6 md:grid-cols-2 xl:grid-cols-3 lg:items-center 2xl:grid-cols-4">
               <li className="">
@@ -93,18 +93,24 @@ const ProjectHeader = () => {
                   target="_blank"
                   className=""
                 >
-                  <div className="transition-all duration-500 ease-in-out hover:shadow-2xl max-w-96 shadow rounded-xl bg-green-700 text-white">
+                  <div className="transition-all duration-500 border ease-in-out hover:shadow-2xl max-w-96 shadow rounded-xl bg-green-700 text-white">
                     <img
                       src={shopKuy}
                       alt="shopKuy"
                       className="object-cover w-full h-64 rounded-t-lg"
                     />
-                    <div className="flex flex-col items-center justify-center gap-4 px-3 py-6 mx-3">
-                      <h1 className="font-semibold text-center 2xl:text-lg">
-                        ShopKuy
-                      </h1>
-                      <p className="text-center">
-                        Landing Page Toko Online Platzi Fake Api Store
+                    <div className="flex gap-2 px-4 py-3">
+                      <p className="bg-white rounded text-green-800 px-2 py-1">
+                        React
+                      </p>
+                      <p className="bg-white rounded text-green-800 px-2 py-1">
+                        Tailwind CSS
+                      </p>
+                    </div>
+                    <div className="flex flex-col gap-4 px-3 pb-6 pt-2 mx-3">
+                      <h1 className="font-semibold 2xl:text-lg">ShopKuy</h1>
+                      <p className="">
+                        Landing page toko online platzi fake api store
                       </p>
                     </div>
                   </div>
@@ -116,19 +122,26 @@ const ProjectHeader = () => {
                   target="_blank"
                   className=""
                 >
-                  <div className="transition-all duration-500 ease-in-out hover:shadow-2xl max-w-96 shadow rounded-xl bg-green-700 text-white">
+                  <div className="transition-all duration-500 border ease-in-out hover:shadow-2xl max-w-96 shadow rounded-xl bg-green-700 text-white">
                     <img
                       src={racingGame}
                       alt="racingGame"
                       className="object-cover w-full h-64 rounded-t-lg"
                     />
-                    <div className="flex flex-col items-center justify-center gap-4 px-3 py-6 mx-3">
-                      <h1 className="font-semibold text-center 2xl:text-lg">
-                        Racing Game
-                      </h1>
-                      <p className="text-center">
-                        Game Mobil Sederhana Melewati Obstacle
+                    <div className="flex gap-2 px-4 py-3">
+                      <p className="bg-white rounded text-green-800 px-2 py-1">
+                        HTML
                       </p>
+                      <p className="bg-white rounded text-green-800 px-2 py-1">
+                        CSS
+                      </p>
+                      <p className="bg-white rounded text-green-800 px-2 py-1">
+                        Javascript
+                      </p>
+                    </div>
+                    <div className="flex flex-col gap-4 px-3 pb-6 pt-2 mx-3">
+                      <h1 className="font-semibold 2xl:text-lg">Racing Game</h1>
+                      <p className="">Game mobil sederhana melewati obstacle</p>
                     </div>
                   </div>
                 </Link>
@@ -139,17 +152,22 @@ const ProjectHeader = () => {
                   target="_blank"
                   className=""
                 >
-                  <div className="transition-all duration-500 ease-in-out hover:shadow-2xl max-w-96 shadow rounded-xl bg-green-700 text-white">
+                  <div className="transition-all duration-500 border ease-in-out hover:shadow-2xl max-w-96 shadow rounded-xl bg-green-700 text-white">
                     <img
                       src={shoppingList}
                       alt="shoppingList"
                       className="object-cover w-full h-64 rounded-t-lg"
                     />
-                    <div className="flex flex-col items-center justify-center gap-4 px-3 py-6 mx-3">
-                      <h1 className="font-semibold text-center 2xl:text-lg">
+                    <div className="flex gap-2 px-4 py-3">
+                      <p className="bg-white rounded text-green-800 px-2 py-1">
+                        React
+                      </p>
+                    </div>
+                    <div className="flex flex-col gap-4 px-3 pb-6 pt-2 mx-3">
+                      <h1 className="font-semibold 2xl:text-lg">
                         Counter Starter
                       </h1>
-                      <p className="text-center">
+                      <p className="">
                         Pencatatan list yang digunakan untuk belanja
                       </p>
                     </div>
@@ -158,21 +176,32 @@ const ProjectHeader = () => {
               </li>
               <li className="">
                 <Link
-                  to="https://racing-game-site6.vercel.app/"
+                  to="https://bookshelf-app-xi.vercel.app/"
                   target="_blank"
                   className=""
                 >
-                  <div className="transition-all duration-500 ease-in-out hover:shadow-2xl max-w-96 shadow rounded-xl bg-green-700 text-white">
+                  <div className="transition-all duration-500 border ease-in-out hover:shadow-2xl max-w-96 shadow rounded-xl bg-green-700 text-white">
                     <img
                       src={bookshelf}
                       alt="bookshelf"
                       className="object-cover w-full h-64 rounded-t-lg"
                     />
-                    <div className="flex flex-col items-center justify-center gap-4 px-3 py-6 mx-3">
-                      <h1 className="font-semibold text-center 2xl:text-lg">
+                    <div className="flex gap-2 px-4 py-3">
+                      <p className="bg-white rounded text-green-800 px-2 py-1">
+                        HTML
+                      </p>
+                      <p className="bg-white rounded text-green-800 px-2 py-1">
+                        CSS
+                      </p>
+                      <p className="bg-white rounded text-green-800 px-2 py-1">
+                        Javascript
+                      </p>
+                    </div>
+                    <div className="flex flex-col gap-4 px-3 pb-6 pt-2 mx-3">
+                      <h1 className="font-semibold 2xl:text-lg">
                         Bookshelf App
                       </h1>
-                      <p className="text-center">
+                      <p className="">
                         Mencatat buku yang sudah dibaca dan belum dibaca
                       </p>
                     </div>

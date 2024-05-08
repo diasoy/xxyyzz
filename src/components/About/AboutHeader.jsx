@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 const AboutHeader = () => {
   return (
     <>
@@ -66,12 +64,6 @@ const AboutHeader = () => {
               </li>
             </ul>
           </ul>
-          <Link
-            to="/about"
-            className="mt-10 text-xl font-semibold text-green-700 hover:text-green-500"
-          >
-            Lihat saya lebih jauh
-          </Link>
         </div>
       </div>
     </>
