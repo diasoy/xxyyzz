@@ -36,7 +36,7 @@ const ProjectHeader = () => {
             <h1 className="mb-4 text-lg font-semibold underline underline-offset-8">
               UI - UX Project
             </h1>
-            <ul className="grid gap-6 md:grid-cols-2 xl:grid-cols-3 lg:items-center 2xl:grid-cols-4">
+            <ul className="grid gap-6 md:grid-cols-2 xl:grid-cols-3 lg:items-start 2xl:grid-cols-4">
               <li className="">
                 <Link
                   to={"/project-experience/kiddy-learn-adventures"}
@@ -86,7 +86,7 @@ const ProjectHeader = () => {
             <h1 className="mb-4 text-lg font-semibold underline underline-offset-8">
               Web
             </h1>
-            <ul className="grid gap-6 md:grid-cols-2 xl:grid-cols-3 lg:items-center 2xl:grid-cols-4">
+            <ul className="grid gap-6 md:grid-cols-2 xl:grid-cols-3 lg:items-start 2xl:grid-cols-4">
               <li className="">
                 <Link
                   to="https://dias-shopkuy-site.vercel.app/"

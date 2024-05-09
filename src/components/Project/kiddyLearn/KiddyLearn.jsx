@@ -78,6 +78,16 @@ const KiddyLearn = () => {
           </div>
           <DesignThinking />
 
+          <a
+            href="https://www.figma.com/proto/b70xTQr2TgCNRDFvHm2kyG/KiddyLearn-Adventures?page-id=0%3A1&type=design&node-id=176-582&viewport=302%2C391%2C0.14&t=0NffNxKZvzhRHrd7-1&scaling=scale-down&starting-point-node-id=176%3A582&mode=design"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="text-sm lg:text-md px-3 py-1 text-white bg-green-700 rounded hover:bg-green-800">
+              See Prototype
+            </button>
+          </a>
+
           {/* Splash Screen */}
           <div className="mt-10">
             <h1 className="font-semibold text-left 2xl:text-lg">

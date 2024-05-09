@@ -60,12 +60,22 @@ const Qris = () => {
             </div>
           </div>
 
+          <a
+            href="https://www.figma.com/proto/DIueampg9uDU7wmzUdOLx1/UIUX-Design?page-id=1%3A2&type=design&node-id=35-577&viewport=3977%2C-306%2C0.43&t=b1Qoa3VS5PVD7r93-1&scaling=scale-down&mode=design"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="text-sm lg:text-md px-3 py-1 text-white bg-green-700 rounded hover:bg-green-800">
+              See Prototype
+            </button>
+          </a>
+
           {/* Halaman Splash Screen */}
           <div className="mt-10">
             <h1 className="font-semibold text-left 2xl:text-lg">
               Splash Screen, Login & Register
             </h1>
-            <div className="grid items-center grid-cols-3 gap-2 mx-1 my-2">
+            <div className="grid items-start grid-cols-3 gap-2 mx-1 my-2">
               <div>
                 <img src={splashScreen} alt="" className="" />
                 <p className="mt-1 text-sm text-center ">Splash Screen</p>
@@ -86,7 +96,7 @@ const Qris = () => {
             <h1 className="font-semibold text-left 2xl:text-lg">
               Halaman Utama
             </h1>
-            <div className="grid items-center grid-cols-3 gap-2 mx-1 my-2">
+            <div className="grid items-start grid-cols-3 gap-2 mx-1 my-2">
               <div>
                 <img src={beranda} alt="" className="" />
                 <p className="mt-1 text-sm text-center ">Halaman Utama</p>
@@ -109,7 +119,7 @@ const Qris = () => {
             <h1 className="font-semibold text-left 2xl:text-lg">
               Halaman Event, Profile & Qris Merch
             </h1>
-            <div className="grid items-center grid-cols-3 gap-2 mx-1 my-2">
+            <div className="grid items-start grid-cols-3 gap-2 mx-1 my-2">
               <div>
                 <img src={profile} alt="" className="" />
                 <p className="mt-1 text-sm text-center ">Profile</p>
@@ -130,7 +140,7 @@ const Qris = () => {
             <h1 className="font-semibold text-left 2xl:text-lg">
               Halaman Pembayaran
             </h1>
-            <div className="grid items-center grid-cols-3 gap-2 mx-1 my-2">
+            <div className="grid items-start grid-cols-3 gap-2 mx-1 my-2">
               <div>
                 <img src={scan} alt="" className="" />
                 <p className="mt-1 text-sm text-center ">Scan Pembayaran</p>
